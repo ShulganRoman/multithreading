@@ -303,6 +303,9 @@ Catch2_DIR:PATH=/opt/homebrew/lib/cmake/Catch2
 //Maximum time allowed before CTest will kill the test.
 DART_TESTING_TIMEOUT:STRING=1500
 
+//Path to a program.
+GITCOMMAND:FILEPATH=/usr/bin/git
+
 //Git command line client
 GIT_EXECUTABLE:FILEPATH=/usr/bin/git
 
@@ -342,34 +345,34 @@ boost_headers_DIR:PATH=/opt/homebrew/lib/cmake/boost_headers-1.87.0
 boost_system_DIR:PATH=/opt/homebrew/lib/cmake/boost_system-1.87.0
 
 //Value Computed by CMake
-gmock_BINARY_DIR:STATIC=/Users/romansulgan/repos/multithreading/out/Debug/external/googletest/googlemock
+gmock_BINARY_DIR:STATIC=/Users/romansulgan/repos/multithreading/out/Debug/external/googlemock
 
 //Value Computed by CMake
 gmock_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-gmock_SOURCE_DIR:STATIC=/Users/romansulgan/repos/multithreading/external/googletest/googlemock
+gmock_SOURCE_DIR:STATIC=/Users/romansulgan/repos/multithreading/external/googlemock
 
 //Build all of Google Mock's own tests.
 gmock_build_tests:BOOL=OFF
 
 //Value Computed by CMake
-googletest-distribution_BINARY_DIR:STATIC=/Users/romansulgan/repos/multithreading/out/Debug/external/googletest
+googletest-distribution_BINARY_DIR:STATIC=/Users/romansulgan/repos/multithreading/out/Debug/external
 
 //Value Computed by CMake
 googletest-distribution_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-googletest-distribution_SOURCE_DIR:STATIC=/Users/romansulgan/repos/multithreading/external/googletest
+googletest-distribution_SOURCE_DIR:STATIC=/Users/romansulgan/repos/multithreading/external
 
 //Value Computed by CMake
-gtest_BINARY_DIR:STATIC=/Users/romansulgan/repos/multithreading/out/Debug/external/googletest/googletest
+gtest_BINARY_DIR:STATIC=/Users/romansulgan/repos/multithreading/out/Debug/external/googletest
 
 //Value Computed by CMake
 gtest_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-gtest_SOURCE_DIR:STATIC=/Users/romansulgan/repos/multithreading/external/googletest/googletest
+gtest_SOURCE_DIR:STATIC=/Users/romansulgan/repos/multithreading/external/googletest
 
 //Build gtest's sample programs.
 gtest_build_samples:BOOL=OFF
@@ -535,7 +538,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -594,6 +597,8 @@ DART_TESTING_TIMEOUT-ADVANCED:INTERNAL=1
 FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/opt/homebrew/bin/pkg-config][v2.4.3()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
+//ADVANCED property for variable: GITCOMMAND
+GITCOMMAND-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: GIT_EXECUTABLE
 GIT_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MAKECOMMAND
@@ -652,7 +657,7 @@ boost_headers_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: boost_system_DIR
 boost_system_DIR-ADVANCED:INTERNAL=1
 cmake_package_name:INTERNAL=GTest
-generated_dir:INTERNAL=/Users/romansulgan/repos/multithreading/out/Debug/external/googletest/googletest/generated
+generated_dir:INTERNAL=/Users/romansulgan/repos/multithreading/out/Debug/external/googletest/generated
 //ADVANCED property for variable: gmock_build_tests
 gmock_build_tests-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: gtest_build_samples

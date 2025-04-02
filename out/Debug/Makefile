@@ -584,7 +584,7 @@ gmock: cmake_check_build_system
 
 # fast build rule for target.
 gmock/fast:
-	$(MAKE) $(MAKESILENT) -f external/googletest/googlemock/CMakeFiles/gmock.dir/build.make external/googletest/googlemock/CMakeFiles/gmock.dir/build
+	$(MAKE) $(MAKESILENT) -f external/googlemock/CMakeFiles/gmock.dir/build.make external/googlemock/CMakeFiles/gmock.dir/build
 .PHONY : gmock/fast
 
 #=============================================================================
@@ -597,7 +597,7 @@ gmock_main: cmake_check_build_system
 
 # fast build rule for target.
 gmock_main/fast:
-	$(MAKE) $(MAKESILENT) -f external/googletest/googlemock/CMakeFiles/gmock_main.dir/build.make external/googletest/googlemock/CMakeFiles/gmock_main.dir/build
+	$(MAKE) $(MAKESILENT) -f external/googlemock/CMakeFiles/gmock_main.dir/build.make external/googlemock/CMakeFiles/gmock_main.dir/build
 .PHONY : gmock_main/fast
 
 #=============================================================================
@@ -610,7 +610,7 @@ gtest: cmake_check_build_system
 
 # fast build rule for target.
 gtest/fast:
-	$(MAKE) $(MAKESILENT) -f external/googletest/googletest/CMakeFiles/gtest.dir/build.make external/googletest/googletest/CMakeFiles/gtest.dir/build
+	$(MAKE) $(MAKESILENT) -f external/googletest/CMakeFiles/gtest.dir/build.make external/googletest/CMakeFiles/gtest.dir/build
 .PHONY : gtest/fast
 
 #=============================================================================
@@ -623,7 +623,7 @@ gtest_main: cmake_check_build_system
 
 # fast build rule for target.
 gtest_main/fast:
-	$(MAKE) $(MAKESILENT) -f external/googletest/googletest/CMakeFiles/gtest_main.dir/build.make external/googletest/googletest/CMakeFiles/gtest_main.dir/build
+	$(MAKE) $(MAKESILENT) -f external/googletest/CMakeFiles/gtest_main.dir/build.make external/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
 src/main.o: src/main.cpp.o

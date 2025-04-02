@@ -38,9 +38,8 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  # Include the install script for each subdirectory.
-  include("/Users/romansulgan/repos/multithreading/out/Debug/external/googletest/cmake_install.cmake")
-
+  # Include the install script for the subdirectory.
+  include("/Users/romansulgan/repos/multithreading/out/Debug/external/googlemock/cmake_install.cmake")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT

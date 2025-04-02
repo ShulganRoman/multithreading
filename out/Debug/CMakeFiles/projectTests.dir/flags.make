@@ -4,7 +4,7 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 CXX_DEFINES = -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB
 
-CXX_INCLUDES = -I/opt/homebrew/Cellar/libpqxx/7.10.0/include -isystem /opt/homebrew/include -isystem /Users/romansulgan/repos/multithreading/external/googletest/googletest/include -isystem /Users/romansulgan/repos/multithreading/external/googletest/googletest
+CXX_INCLUDES = -I/opt/homebrew/Cellar/libpqxx/7.10.0/include -isystem /opt/homebrew/include -isystem /Users/romansulgan/repos/multithreading/external/googletest/include -isystem /Users/romansulgan/repos/multithreading/external/googletest
 
 CXX_FLAGSarm64 = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk
 

@@ -171,6 +171,82 @@ depend:
 	cd /Users/romansulgan/repos/multithreading/out/Debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
+# Convenience name for target.
+external/googletest/CMakeFiles/gtest.dir/rule:
+	cd /Users/romansulgan/repos/multithreading/out/Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/googletest/CMakeFiles/gtest.dir/rule
+.PHONY : external/googletest/CMakeFiles/gtest.dir/rule
+
+# Convenience name for target.
+gtest: external/googletest/CMakeFiles/gtest.dir/rule
+.PHONY : gtest
+
+# fast build rule for target.
+gtest/fast:
+	cd /Users/romansulgan/repos/multithreading/out/Debug && $(MAKE) $(MAKESILENT) -f external/googletest/CMakeFiles/gtest.dir/build.make external/googletest/CMakeFiles/gtest.dir/build
+.PHONY : gtest/fast
+
+# Convenience name for target.
+external/googletest/CMakeFiles/gtest_main.dir/rule:
+	cd /Users/romansulgan/repos/multithreading/out/Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/googletest/CMakeFiles/gtest_main.dir/rule
+.PHONY : external/googletest/CMakeFiles/gtest_main.dir/rule
+
+# Convenience name for target.
+gtest_main: external/googletest/CMakeFiles/gtest_main.dir/rule
+.PHONY : gtest_main
+
+# fast build rule for target.
+gtest_main/fast:
+	cd /Users/romansulgan/repos/multithreading/out/Debug && $(MAKE) $(MAKESILENT) -f external/googletest/CMakeFiles/gtest_main.dir/build.make external/googletest/CMakeFiles/gtest_main.dir/build
+.PHONY : gtest_main/fast
+
+src/gtest-all.o: src/gtest-all.cc.o
+.PHONY : src/gtest-all.o
+
+# target to build an object file
+src/gtest-all.cc.o:
+	cd /Users/romansulgan/repos/multithreading/out/Debug && $(MAKE) $(MAKESILENT) -f external/googletest/CMakeFiles/gtest.dir/build.make external/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+.PHONY : src/gtest-all.cc.o
+
+src/gtest-all.i: src/gtest-all.cc.i
+.PHONY : src/gtest-all.i
+
+# target to preprocess a source file
+src/gtest-all.cc.i:
+	cd /Users/romansulgan/repos/multithreading/out/Debug && $(MAKE) $(MAKESILENT) -f external/googletest/CMakeFiles/gtest.dir/build.make external/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.i
+.PHONY : src/gtest-all.cc.i
+
+src/gtest-all.s: src/gtest-all.cc.s
+.PHONY : src/gtest-all.s
+
+# target to generate assembly for a file
+src/gtest-all.cc.s:
+	cd /Users/romansulgan/repos/multithreading/out/Debug && $(MAKE) $(MAKESILENT) -f external/googletest/CMakeFiles/gtest.dir/build.make external/googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.s
+.PHONY : src/gtest-all.cc.s
+
+src/gtest_main.o: src/gtest_main.cc.o
+.PHONY : src/gtest_main.o
+
+# target to build an object file
+src/gtest_main.cc.o:
+	cd /Users/romansulgan/repos/multithreading/out/Debug && $(MAKE) $(MAKESILENT) -f external/googletest/CMakeFiles/gtest_main.dir/build.make external/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+.PHONY : src/gtest_main.cc.o
+
+src/gtest_main.i: src/gtest_main.cc.i
+.PHONY : src/gtest_main.i
+
+# target to preprocess a source file
+src/gtest_main.cc.i:
+	cd /Users/romansulgan/repos/multithreading/out/Debug && $(MAKE) $(MAKESILENT) -f external/googletest/CMakeFiles/gtest_main.dir/build.make external/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.i
+.PHONY : src/gtest_main.cc.i
+
+src/gtest_main.s: src/gtest_main.cc.s
+.PHONY : src/gtest_main.s
+
+# target to generate assembly for a file
+src/gtest_main.cc.s:
+	cd /Users/romansulgan/repos/multithreading/out/Debug && $(MAKE) $(MAKESILENT) -f external/googletest/CMakeFiles/gtest_main.dir/build.make external/googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.s
+.PHONY : src/gtest_main.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -184,6 +260,14 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... gtest"
+	@echo "... gtest_main"
+	@echo "... src/gtest-all.o"
+	@echo "... src/gtest-all.i"
+	@echo "... src/gtest-all.s"
+	@echo "... src/gtest_main.o"
+	@echo "... src/gtest_main.i"
+	@echo "... src/gtest_main.s"
 .PHONY : help
 
 
