@@ -11,12 +11,13 @@ pkg_check_modules(PQXX REQUIRED libpqxx)
 include_directories(${PQXX_INCLUDE_DIRS})
 link_directories(${PQXX_LIBRARY_DIRS})
 
-file(GLOB_RECURSE LIB_SOURCES "src/*.cpp")
-add_library(projectLib ${LIB_SOURCES})
+file(GLOB_RECURSE SOURCES "src/*.cpp")
+
+add_library(projectLib ${SOURCES})
 target_link_libraries(projectLib ${Boost_LIBRARIES} ${PQXX_LIBRARIES})
 
-add_executable(project ${LIB_SOURCES})
-target_link_libraries(project ${Boost_LIBRARIES} ${PQXX_LIBRARIES})
+add_executable(project ${SOURCES})
+target_link_libraries(project PRIVATE ${Boost_LIBRARIES} ${PQXX_LIBRARIES})
 
 find_package(Catch2 REQUIRED)
 file(GLOB_RECURSE TEST_SOURCES "tests/*.cpp")

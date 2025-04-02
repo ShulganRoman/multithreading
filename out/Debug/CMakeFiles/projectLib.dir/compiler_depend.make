@@ -958,9 +958,7 @@ CMakeFiles/projectLib.dir/src/main.cpp.o: /Users/romansulgan/repos/multithreadin
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdint.h \
-  /Users/romansulgan/repos/multithreading/src/user/TestUser.h \
-  /Users/romansulgan/repos/multithreading/src/server/IServer.h \
-  /Users/romansulgan/repos/multithreading/src/server/TestServer.h
+  /Users/romansulgan/repos/multithreading/src/user/TestUser.h
 
 CMakeFiles/projectLib.dir/src/server/Server.cpp.o: /Users/romansulgan/repos/multithreading/src/server/Server.cpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/Availability.h \
@@ -3420,13 +3418,13 @@ CMakeFiles/projectLib.dir/src/user/User.cpp.o: /Users/romansulgan/repos/multithr
 
 /Users/romansulgan/repos/multithreading/src/user/User.cpp:
 
-/Users/romansulgan/repos/multithreading/src/user/User.h:
-
-/Users/romansulgan/repos/multithreading/src/exceptions/InvalidDeleteUser.h:
-
 /Users/romansulgan/repos/multithreading/src/server/TestServer.h:
 
 /Users/romansulgan/repos/multithreading/src/server/IServer.h:
+
+/Users/romansulgan/repos/multithreading/src/user/User.h:
+
+/Users/romansulgan/repos/multithreading/src/exceptions/InvalidDeleteUser.h:
 
 /Users/romansulgan/repos/multithreading/src/user/TestUser.h:
 

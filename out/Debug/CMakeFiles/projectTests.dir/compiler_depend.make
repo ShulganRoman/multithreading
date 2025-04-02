@@ -996,56 +996,63 @@ CMakeFiles/projectTests.dir/tests/ServerTestBoost.cpp.o: /Users/romansulgan/repo
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stddef.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdint.h \
-  /Users/romansulgan/repos/multithreading/external/googletest/googletest/include/gtest/gtest-assertion-result.h \
-  /Users/romansulgan/repos/multithreading/external/googletest/googletest/include/gtest/gtest-death-test.h \
-  /Users/romansulgan/repos/multithreading/external/googletest/googletest/include/gtest/gtest-matchers.h \
-  /Users/romansulgan/repos/multithreading/external/googletest/googletest/include/gtest/gtest-message.h \
-  /Users/romansulgan/repos/multithreading/external/googletest/googletest/include/gtest/gtest-param-test.h \
-  /Users/romansulgan/repos/multithreading/external/googletest/googletest/include/gtest/gtest-printers.h \
-  /Users/romansulgan/repos/multithreading/external/googletest/googletest/include/gtest/gtest-test-part.h \
-  /Users/romansulgan/repos/multithreading/external/googletest/googletest/include/gtest/gtest-typed-test.h \
-  /Users/romansulgan/repos/multithreading/external/googletest/googletest/include/gtest/gtest.h \
-  /Users/romansulgan/repos/multithreading/external/googletest/googletest/include/gtest/gtest_pred_impl.h \
-  /Users/romansulgan/repos/multithreading/external/googletest/googletest/include/gtest/gtest_prod.h \
-  /Users/romansulgan/repos/multithreading/external/googletest/googletest/include/gtest/internal/custom/gtest-port.h \
-  /Users/romansulgan/repos/multithreading/external/googletest/googletest/include/gtest/internal/custom/gtest-printers.h \
-  /Users/romansulgan/repos/multithreading/external/googletest/googletest/include/gtest/internal/gtest-death-test-internal.h \
-  /Users/romansulgan/repos/multithreading/external/googletest/googletest/include/gtest/internal/gtest-filepath.h \
-  /Users/romansulgan/repos/multithreading/external/googletest/googletest/include/gtest/internal/gtest-internal.h \
-  /Users/romansulgan/repos/multithreading/external/googletest/googletest/include/gtest/internal/gtest-param-util.h \
-  /Users/romansulgan/repos/multithreading/external/googletest/googletest/include/gtest/internal/gtest-port-arch.h \
-  /Users/romansulgan/repos/multithreading/external/googletest/googletest/include/gtest/internal/gtest-port.h \
-  /Users/romansulgan/repos/multithreading/external/googletest/googletest/include/gtest/internal/gtest-string.h \
-  /Users/romansulgan/repos/multithreading/external/googletest/googletest/include/gtest/internal/gtest-type-util.h
+  /Users/romansulgan/repos/multithreading/external/googletest/include/gtest/gtest-assertion-result.h \
+  /Users/romansulgan/repos/multithreading/external/googletest/include/gtest/gtest-death-test.h \
+  /Users/romansulgan/repos/multithreading/external/googletest/include/gtest/gtest-matchers.h \
+  /Users/romansulgan/repos/multithreading/external/googletest/include/gtest/gtest-message.h \
+  /Users/romansulgan/repos/multithreading/external/googletest/include/gtest/gtest-param-test.h \
+  /Users/romansulgan/repos/multithreading/external/googletest/include/gtest/gtest-printers.h \
+  /Users/romansulgan/repos/multithreading/external/googletest/include/gtest/gtest-test-part.h \
+  /Users/romansulgan/repos/multithreading/external/googletest/include/gtest/gtest-typed-test.h \
+  /Users/romansulgan/repos/multithreading/external/googletest/include/gtest/gtest.h \
+  /Users/romansulgan/repos/multithreading/external/googletest/include/gtest/gtest_pred_impl.h \
+  /Users/romansulgan/repos/multithreading/external/googletest/include/gtest/gtest_prod.h \
+  /Users/romansulgan/repos/multithreading/external/googletest/include/gtest/internal/custom/gtest-port.h \
+  /Users/romansulgan/repos/multithreading/external/googletest/include/gtest/internal/custom/gtest-printers.h \
+  /Users/romansulgan/repos/multithreading/external/googletest/include/gtest/internal/gtest-death-test-internal.h \
+  /Users/romansulgan/repos/multithreading/external/googletest/include/gtest/internal/gtest-filepath.h \
+  /Users/romansulgan/repos/multithreading/external/googletest/include/gtest/internal/gtest-internal.h \
+  /Users/romansulgan/repos/multithreading/external/googletest/include/gtest/internal/gtest-param-util.h \
+  /Users/romansulgan/repos/multithreading/external/googletest/include/gtest/internal/gtest-port-arch.h \
+  /Users/romansulgan/repos/multithreading/external/googletest/include/gtest/internal/gtest-port.h \
+  /Users/romansulgan/repos/multithreading/external/googletest/include/gtest/internal/gtest-string.h \
+  /Users/romansulgan/repos/multithreading/external/googletest/include/gtest/internal/gtest-type-util.h \
+  /Users/romansulgan/repos/multithreading/src/exceptions/InvalidDeleteUser.h \
+  /Users/romansulgan/repos/multithreading/src/user/TestUser.h \
+  /Users/romansulgan/repos/multithreading/src/server/IServer.h \
+  /Users/romansulgan/repos/multithreading/src/server/TestServer.h \
+  /Users/romansulgan/repos/multithreading/src/user/TestUser.h
 
 
-/Users/romansulgan/repos/multithreading/external/googletest/googletest/include/gtest/internal/gtest-port.h:
+/Users/romansulgan/repos/multithreading/src/server/TestServer.h:
 
-/Users/romansulgan/repos/multithreading/external/googletest/googletest/include/gtest/internal/gtest-port-arch.h:
+/Users/romansulgan/repos/multithreading/src/server/IServer.h:
 
-/Users/romansulgan/repos/multithreading/external/googletest/googletest/include/gtest/internal/gtest-param-util.h:
+/Users/romansulgan/repos/multithreading/src/user/TestUser.h:
 
-/Users/romansulgan/repos/multithreading/external/googletest/googletest/include/gtest/internal/gtest-internal.h:
+/Users/romansulgan/repos/multithreading/src/exceptions/InvalidDeleteUser.h:
 
-/Users/romansulgan/repos/multithreading/external/googletest/googletest/include/gtest/internal/gtest-filepath.h:
+/Users/romansulgan/repos/multithreading/external/googletest/include/gtest/internal/gtest-filepath.h:
 
-/Users/romansulgan/repos/multithreading/external/googletest/googletest/include/gtest/internal/gtest-death-test-internal.h:
+/Users/romansulgan/repos/multithreading/external/googletest/include/gtest/internal/gtest-death-test-internal.h:
 
-/Users/romansulgan/repos/multithreading/external/googletest/googletest/include/gtest/internal/custom/gtest-printers.h:
+/Users/romansulgan/repos/multithreading/external/googletest/include/gtest/internal/custom/gtest-printers.h:
 
-/Users/romansulgan/repos/multithreading/external/googletest/googletest/include/gtest/internal/custom/gtest-port.h:
+/Users/romansulgan/repos/multithreading/external/googletest/include/gtest/internal/custom/gtest-port.h:
 
-/Users/romansulgan/repos/multithreading/external/googletest/googletest/include/gtest/gtest_prod.h:
+/Users/romansulgan/repos/multithreading/external/googletest/include/gtest/internal/gtest-type-util.h:
 
-/Users/romansulgan/repos/multithreading/external/googletest/googletest/include/gtest/gtest_pred_impl.h:
+/Users/romansulgan/repos/multithreading/external/googletest/include/gtest/gtest_prod.h:
 
-/Users/romansulgan/repos/multithreading/external/googletest/googletest/include/gtest/gtest-test-part.h:
+/Users/romansulgan/repos/multithreading/external/googletest/include/gtest/gtest_pred_impl.h:
 
-/Users/romansulgan/repos/multithreading/external/googletest/googletest/include/gtest/gtest-printers.h:
+/Users/romansulgan/repos/multithreading/external/googletest/include/gtest/gtest-test-part.h:
 
-/Users/romansulgan/repos/multithreading/external/googletest/googletest/include/gtest/gtest-message.h:
+/Users/romansulgan/repos/multithreading/external/googletest/include/gtest/gtest-printers.h:
 
-/Users/romansulgan/repos/multithreading/external/googletest/googletest/include/gtest/gtest-death-test.h:
+/Users/romansulgan/repos/multithreading/external/googletest/include/gtest/gtest-param-test.h:
+
+/Users/romansulgan/repos/multithreading/external/googletest/include/gtest/gtest-message.h:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdint.h:
 
@@ -1134,6 +1141,8 @@ CMakeFiles/projectTests.dir/tests/ServerTestBoost.cpp.o: /Users/romansulgan/repo
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/sys/_types/_int64_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/sys/_types/_int32_t.h:
+
+/Users/romansulgan/repos/multithreading/external/googletest/include/gtest/internal/gtest-string.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/sys/_types/_ino64_t.h:
 
@@ -1279,6 +1288,8 @@ CMakeFiles/projectTests.dir/tests/ServerTestBoost.cpp.o: /Users/romansulgan/repo
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/map:
 
+/Users/romansulgan/repos/multithreading/external/googletest/include/gtest/gtest-death-test.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/iterator:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/ranges_copy_if.h:
@@ -1377,8 +1388,6 @@ CMakeFiles/projectTests.dir/tests/ServerTestBoost.cpp.o: /Users/romansulgan/repo
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__type_traits/result_of.h:
 
-/Users/romansulgan/repos/multithreading/external/googletest/googletest/include/gtest/gtest-matchers.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__type_traits/remove_reference.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__type_traits/remove_pointer.h:
@@ -1464,6 +1473,8 @@ CMakeFiles/projectTests.dir/tests/ServerTestBoost.cpp.o: /Users/romansulgan/repo
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__type_traits/is_implicitly_default_constructible.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__type_traits/is_function.h:
+
+/Users/romansulgan/repos/multithreading/external/googletest/include/gtest/gtest-typed-test.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/ctype.h:
 
@@ -1609,8 +1620,6 @@ CMakeFiles/projectTests.dir/tests/ServerTestBoost.cpp.o: /Users/romansulgan/repo
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__type_traits/common_type.h:
 
-/Users/romansulgan/repos/multithreading/external/googletest/googletest/include/gtest/gtest-param-test.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__type_traits/add_rvalue_reference.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__ranges/enable_view.h:
@@ -1745,8 +1754,6 @@ CMakeFiles/projectTests.dir/tests/ServerTestBoost.cpp.o: /Users/romansulgan/repo
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/ctype.h:
 
-/Users/romansulgan/repos/multithreading/external/googletest/googletest/include/gtest/gtest-assertion-result.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__math/hypot.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/sys/_types/_int8_t.h:
@@ -1768,6 +1775,8 @@ CMakeFiles/projectTests.dir/tests/ServerTestBoost.cpp.o: /Users/romansulgan/repo
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__iterator/default_sentinel.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__variant/monostate.h:
+
+/Users/romansulgan/repos/multithreading/external/googletest/include/gtest/gtest-assertion-result.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__utility/cmp.h:
 
@@ -2095,6 +2104,8 @@ CMakeFiles/projectTests.dir/tests/ServerTestBoost.cpp.o: /Users/romansulgan/repo
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__concepts/semiregular.h:
 
+/Users/romansulgan/repos/multithreading/external/googletest/include/gtest/internal/gtest-param-util.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__concepts/same_as.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/sys/_types/_timeval.h:
@@ -2417,8 +2428,6 @@ CMakeFiles/projectTests.dir/tests/ServerTestBoost.cpp.o: /Users/romansulgan/repo
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/ranges_set_difference.h:
 
-/Users/romansulgan/repos/multithreading/external/googletest/googletest/include/gtest/internal/gtest-string.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/sys/_types/_u_int8_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__type_traits/is_unsigned.h:
@@ -2450,6 +2459,8 @@ CMakeFiles/projectTests.dir/tests/ServerTestBoost.cpp.o: /Users/romansulgan/repo
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__debug_utils/randomize_range.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/ranges_replace_if.h:
+
+/Users/romansulgan/repos/multithreading/external/googletest/include/gtest/internal/gtest-internal.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/_ctype.h:
 
@@ -2501,8 +2512,6 @@ CMakeFiles/projectTests.dir/tests/ServerTestBoost.cpp.o: /Users/romansulgan/repo
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/move_backward.h:
 
-/Users/romansulgan/repos/multithreading/external/googletest/googletest/include/gtest/gtest-typed-test.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/ranges_minmax_element.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/gethostuuid.h:
@@ -2547,6 +2556,8 @@ CMakeFiles/projectTests.dir/tests/ServerTestBoost.cpp.o: /Users/romansulgan/repo
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/ranges_merge.h:
 
+/Users/romansulgan/repos/multithreading/external/googletest/include/gtest/internal/gtest-port-arch.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/ranges_iterator_concept.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/ranges_is_sorted_until.h:
@@ -2576,6 +2587,8 @@ CMakeFiles/projectTests.dir/tests/ServerTestBoost.cpp.o: /Users/romansulgan/repo
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__type_traits/is_pointer.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__type_traits/is_equality_comparable.h:
+
+/Users/romansulgan/repos/multithreading/external/googletest/include/gtest/gtest-matchers.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/in_in_result.h:
 
@@ -2687,6 +2700,8 @@ CMakeFiles/projectTests.dir/tests/ServerTestBoost.cpp.o: /Users/romansulgan/repo
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__concepts/invocable.h:
 
+/Users/romansulgan/repos/multithreading/external/googletest/include/gtest/gtest.h:
+
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__type_traits/is_signed.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__memory/auto_ptr.h:
@@ -2760,6 +2775,8 @@ CMakeFiles/projectTests.dir/tests/ServerTestBoost.cpp.o: /Users/romansulgan/repo
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__atomic/contention_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__system_error/error_code.h:
+
+/Users/romansulgan/repos/multithreading/external/googletest/include/gtest/internal/gtest-port.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/pstl_sort.h:
 
@@ -2971,8 +2988,6 @@ CMakeFiles/projectTests.dir/tests/ServerTestBoost.cpp.o: /Users/romansulgan/repo
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h:
 
-/Users/romansulgan/repos/multithreading/external/googletest/googletest/include/gtest/gtest.h:
-
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/pstl_find.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/pstl_generate.h:
@@ -3022,8 +3037,6 @@ CMakeFiles/projectTests.dir/tests/ServerTestBoost.cpp.o: /Users/romansulgan/repo
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/_types/_uint16_t.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__format/format_arg.h:
-
-/Users/romansulgan/repos/multithreading/external/googletest/googletest/include/gtest/internal/gtest-type-util.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__algorithm/pstl_backends/cpu_backends/any_of.h:
 
