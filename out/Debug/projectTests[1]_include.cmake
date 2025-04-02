@@ -1,0 +1,5 @@
+if(EXISTS "/Users/romansulgan/repos/multithreading/out/Debug/projectTests[1]_tests.cmake")
+  include("/Users/romansulgan/repos/multithreading/out/Debug/projectTests[1]_tests.cmake")
+else()
+  add_test(projectTests_NOT_BUILT projectTests_NOT_BUILT)
+endif()
