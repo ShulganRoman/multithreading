@@ -1,7 +1,6 @@
-#include "../src/exceptions/InvalidDeleteUser.h"
-#include "../src/server/TestServer.h"
-#include "../src/user/TestUser.h"
-
+#include "InvalidDeleteUser.h"
+#include "TestServer.h"
+#include "TestUser.h"
 #include <cstdio>
 #include <gtest/gtest.h>
 #include <unordered_map>

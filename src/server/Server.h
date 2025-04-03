@@ -1,7 +1,7 @@
 #pragma once
 
-#include "../user/User.h"
 #include "IServer.h"
+#include "User.h"
 #include <unordered_map>
 
 class Server : private IServer {

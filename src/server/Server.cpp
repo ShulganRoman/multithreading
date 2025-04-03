@@ -1,5 +1,6 @@
 #include "Server.h"
-#include "../exceptions/InvalidDeleteUser.h"
+#include "InvalidDeleteUser.h"
+#include "User.h"
 #include <cstddef>
 #include <unordered_map>
 

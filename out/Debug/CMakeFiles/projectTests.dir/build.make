@@ -95,10 +95,12 @@ projectTests_EXTERNAL_OBJECTS =
 
 projectTests: CMakeFiles/projectTests.dir/tests/ServerTestBoost.cpp.o
 projectTests: CMakeFiles/projectTests.dir/build.make
-projectTests: lib/libgtest_main.a
-projectTests: libprojectLib.a
-projectTests: lib/libgtest.a
+projectTests: src/server/libserver.a
+projectTests: src/user/libuser.a
+projectTests: src/db/libdb.a
 projectTests: /opt/homebrew/lib/libboost_system.dylib
+projectTests: lib/libgtest_main.a
+projectTests: lib/libgtest.a
 projectTests: CMakeFiles/projectTests.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable projectTests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/projectTests.dir/link.txt --verbose=$(VERBOSE)

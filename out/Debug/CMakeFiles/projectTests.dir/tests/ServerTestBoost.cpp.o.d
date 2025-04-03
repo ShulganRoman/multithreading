@@ -1,6 +1,6 @@
 CMakeFiles/projectTests.dir/tests/ServerTestBoost.cpp.o: \
   /Users/romansulgan/repos/multithreading/tests/ServerTestBoost.cpp \
-  /Users/romansulgan/repos/multithreading/tests/../src/exceptions/InvalidDeleteUser.h \
+  /Users/romansulgan/repos/multithreading/src/exception/InvalidDeleteUser.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/exception \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__assert \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__assertion_handler \
@@ -811,15 +811,15 @@ CMakeFiles/projectTests.dir/tests/ServerTestBoost.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__bit/byteswap.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__bit/endian.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__bit/has_single_bit.h \
-  /Users/romansulgan/repos/multithreading/tests/../src/server/TestServer.h \
-  /Users/romansulgan/repos/multithreading/tests/../src/server/../user/TestUser.h \
-  /Users/romansulgan/repos/multithreading/tests/../src/server/IServer.h \
+  /Users/romansulgan/repos/multithreading/src/server/TestServer.h \
+  /Users/romansulgan/repos/multithreading/src/server/../user/TestUser.h \
+  /Users/romansulgan/repos/multithreading/src/server/IServer.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/unordered_map \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__functional/is_transparent.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__hash_table \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__iterator/ranges_iterator_traits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__node_handle \
-  /Users/romansulgan/repos/multithreading/tests/../src/user/TestUser.h \
+  /Users/romansulgan/repos/multithreading/src/user/TestUser.h \
   /Users/romansulgan/repos/multithreading/external/googletest/include/gtest/gtest.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/ostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__system_error/error_code.h \

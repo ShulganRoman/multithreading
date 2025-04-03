@@ -25,4 +25,4 @@ private:
   std::vector<std::reference_wrapper<Request>> _query;
 
   std::string _connectionString;
-};
+}; // TODO: Перенести все в Database.cpp

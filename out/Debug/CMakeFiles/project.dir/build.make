@@ -72,24 +72,10 @@ include CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/codegen:
 .PHONY : CMakeFiles/project.dir/codegen
 
-CMakeFiles/project.dir/src/db/Database.cpp.o: CMakeFiles/project.dir/flags.make
-CMakeFiles/project.dir/src/db/Database.cpp.o: /Users/romansulgan/repos/multithreading/src/db/Database.cpp
-CMakeFiles/project.dir/src/db/Database.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/project.dir/src/db/Database.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/db/Database.cpp.o -MF CMakeFiles/project.dir/src/db/Database.cpp.o.d -o CMakeFiles/project.dir/src/db/Database.cpp.o -c /Users/romansulgan/repos/multithreading/src/db/Database.cpp
-
-CMakeFiles/project.dir/src/db/Database.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project.dir/src/db/Database.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/romansulgan/repos/multithreading/src/db/Database.cpp > CMakeFiles/project.dir/src/db/Database.cpp.i
-
-CMakeFiles/project.dir/src/db/Database.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/src/db/Database.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/romansulgan/repos/multithreading/src/db/Database.cpp -o CMakeFiles/project.dir/src/db/Database.cpp.s
-
 CMakeFiles/project.dir/src/main.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/src/main.cpp.o: /Users/romansulgan/repos/multithreading/src/main.cpp
 CMakeFiles/project.dir/src/main.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/project.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/project.dir/src/main.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/main.cpp.o -MF CMakeFiles/project.dir/src/main.cpp.o.d -o CMakeFiles/project.dir/src/main.cpp.o -c /Users/romansulgan/repos/multithreading/src/main.cpp
 
 CMakeFiles/project.dir/src/main.cpp.i: cmake_force
@@ -100,106 +86,21 @@ CMakeFiles/project.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/src/main.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/romansulgan/repos/multithreading/src/main.cpp -o CMakeFiles/project.dir/src/main.cpp.s
 
-CMakeFiles/project.dir/src/server/Server.cpp.o: CMakeFiles/project.dir/flags.make
-CMakeFiles/project.dir/src/server/Server.cpp.o: /Users/romansulgan/repos/multithreading/src/server/Server.cpp
-CMakeFiles/project.dir/src/server/Server.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-<<<<<<< HEAD
-<<<<<<< HEAD
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/project.dir/src/server/Server.cpp.o"
-=======
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/project.dir/src/server/Server.cpp.o"
->>>>>>> parent of ba72ac2 (Add: database class)
-=======
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/project.dir/src/server/Server.cpp.o"
->>>>>>> parent of ba72ac2 (Add: database class)
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/server/Server.cpp.o -MF CMakeFiles/project.dir/src/server/Server.cpp.o.d -o CMakeFiles/project.dir/src/server/Server.cpp.o -c /Users/romansulgan/repos/multithreading/src/server/Server.cpp
-
-CMakeFiles/project.dir/src/server/Server.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project.dir/src/server/Server.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/romansulgan/repos/multithreading/src/server/Server.cpp > CMakeFiles/project.dir/src/server/Server.cpp.i
-
-CMakeFiles/project.dir/src/server/Server.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/src/server/Server.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/romansulgan/repos/multithreading/src/server/Server.cpp -o CMakeFiles/project.dir/src/server/Server.cpp.s
-
-CMakeFiles/project.dir/src/server/TestServer.cpp.o: CMakeFiles/project.dir/flags.make
-CMakeFiles/project.dir/src/server/TestServer.cpp.o: /Users/romansulgan/repos/multithreading/src/server/TestServer.cpp
-CMakeFiles/project.dir/src/server/TestServer.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-<<<<<<< HEAD
-<<<<<<< HEAD
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/project.dir/src/server/TestServer.cpp.o"
-=======
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/project.dir/src/server/TestServer.cpp.o"
->>>>>>> parent of ba72ac2 (Add: database class)
-=======
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/project.dir/src/server/TestServer.cpp.o"
->>>>>>> parent of ba72ac2 (Add: database class)
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/server/TestServer.cpp.o -MF CMakeFiles/project.dir/src/server/TestServer.cpp.o.d -o CMakeFiles/project.dir/src/server/TestServer.cpp.o -c /Users/romansulgan/repos/multithreading/src/server/TestServer.cpp
-
-CMakeFiles/project.dir/src/server/TestServer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project.dir/src/server/TestServer.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/romansulgan/repos/multithreading/src/server/TestServer.cpp > CMakeFiles/project.dir/src/server/TestServer.cpp.i
-
-CMakeFiles/project.dir/src/server/TestServer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/src/server/TestServer.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/romansulgan/repos/multithreading/src/server/TestServer.cpp -o CMakeFiles/project.dir/src/server/TestServer.cpp.s
-
-CMakeFiles/project.dir/src/user/User.cpp.o: CMakeFiles/project.dir/flags.make
-CMakeFiles/project.dir/src/user/User.cpp.o: /Users/romansulgan/repos/multithreading/src/user/User.cpp
-CMakeFiles/project.dir/src/user/User.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
-<<<<<<< HEAD
-<<<<<<< HEAD
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/project.dir/src/user/User.cpp.o"
-=======
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/project.dir/src/user/User.cpp.o"
->>>>>>> parent of ba72ac2 (Add: database class)
-=======
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/project.dir/src/user/User.cpp.o"
->>>>>>> parent of ba72ac2 (Add: database class)
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/project.dir/src/user/User.cpp.o -MF CMakeFiles/project.dir/src/user/User.cpp.o.d -o CMakeFiles/project.dir/src/user/User.cpp.o -c /Users/romansulgan/repos/multithreading/src/user/User.cpp
-
-CMakeFiles/project.dir/src/user/User.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/project.dir/src/user/User.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/romansulgan/repos/multithreading/src/user/User.cpp > CMakeFiles/project.dir/src/user/User.cpp.i
-
-CMakeFiles/project.dir/src/user/User.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/project.dir/src/user/User.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/romansulgan/repos/multithreading/src/user/User.cpp -o CMakeFiles/project.dir/src/user/User.cpp.s
-
 # Object files for target project
 project_OBJECTS = \
-<<<<<<< HEAD
-<<<<<<< HEAD
-"CMakeFiles/project.dir/src/db/Database.cpp.o" \
-=======
->>>>>>> parent of ba72ac2 (Add: database class)
-=======
->>>>>>> parent of ba72ac2 (Add: database class)
-"CMakeFiles/project.dir/src/main.cpp.o" \
-"CMakeFiles/project.dir/src/server/Server.cpp.o" \
-"CMakeFiles/project.dir/src/server/TestServer.cpp.o" \
-"CMakeFiles/project.dir/src/user/User.cpp.o"
+"CMakeFiles/project.dir/src/main.cpp.o"
 
 # External object files for target project
 project_EXTERNAL_OBJECTS =
 
-project: CMakeFiles/project.dir/src/db/Database.cpp.o
 project: CMakeFiles/project.dir/src/main.cpp.o
-project: CMakeFiles/project.dir/src/server/Server.cpp.o
-project: CMakeFiles/project.dir/src/server/TestServer.cpp.o
-project: CMakeFiles/project.dir/src/user/User.cpp.o
 project: CMakeFiles/project.dir/build.make
+project: src/server/libserver.a
+project: src/user/libuser.a
+project: src/db/libdb.a
 project: /opt/homebrew/lib/libboost_system.dylib
 project: CMakeFiles/project.dir/link.txt
-<<<<<<< HEAD
-<<<<<<< HEAD
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable project"
-=======
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable project"
->>>>>>> parent of ba72ac2 (Add: database class)
-=======
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable project"
->>>>>>> parent of ba72ac2 (Add: database class)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable project"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/project.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

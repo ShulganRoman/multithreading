@@ -63,25 +63,34 @@ CMAKE_BINARY_DIR = /Users/romansulgan/repos/multithreading/out/Debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/projectLib.dir/all
 all: CMakeFiles/project.dir/all
 all: CMakeFiles/projectTests.dir/all
+all: src/db/all
+all: src/exception/all
+all: src/user/all
+all: src/server/all
 all: external/all
 .PHONY : all
 
 # The main recursive "codegen" target.
-codegen: CMakeFiles/projectLib.dir/codegen
 codegen: CMakeFiles/project.dir/codegen
 codegen: CMakeFiles/projectTests.dir/codegen
+codegen: src/db/codegen
+codegen: src/exception/codegen
+codegen: src/user/codegen
+codegen: src/server/codegen
 codegen: external/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
+preinstall: src/db/preinstall
+preinstall: src/exception/preinstall
+preinstall: src/user/preinstall
+preinstall: src/server/preinstall
 preinstall: external/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/projectLib.dir/clean
 clean: CMakeFiles/project.dir/clean
 clean: CMakeFiles/Experimental.dir/clean
 clean: CMakeFiles/Nightly.dir/clean
@@ -112,6 +121,10 @@ clean: CMakeFiles/ContinuousCoverage.dir/clean
 clean: CMakeFiles/ContinuousMemCheck.dir/clean
 clean: CMakeFiles/ContinuousSubmit.dir/clean
 clean: CMakeFiles/projectTests.dir/clean
+clean: src/db/clean
+clean: src/exception/clean
+clean: src/user/clean
+clean: src/server/clean
 clean: external/clean
 .PHONY : clean
 
@@ -182,90 +195,96 @@ external/googletest/clean: external/googletest/CMakeFiles/gtest_main.dir/clean
 .PHONY : external/googletest/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/projectLib.dir
+# Directory level rules for directory src/db
 
-# All Build rule for target.
-CMakeFiles/projectLib.dir/all:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/projectLib.dir/build.make CMakeFiles/projectLib.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/projectLib.dir/build.make CMakeFiles/projectLib.dir/build
-<<<<<<< HEAD
-<<<<<<< HEAD
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=15,16,17,18,19,20 "Built target projectLib"
-=======
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=14,15,16,17,18 "Built target projectLib"
->>>>>>> parent of ba72ac2 (Add: database class)
-=======
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=14,15,16,17,18 "Built target projectLib"
->>>>>>> parent of ba72ac2 (Add: database class)
-.PHONY : CMakeFiles/projectLib.dir/all
+# Recursive "all" directory target.
+src/db/all: src/db/CMakeFiles/db.dir/all
+.PHONY : src/db/all
 
-# Build rule for subdir invocation for target.
-CMakeFiles/projectLib.dir/rule: cmake_check_build_system
-<<<<<<< HEAD
-<<<<<<< HEAD
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles 6
-=======
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles 5
->>>>>>> parent of ba72ac2 (Add: database class)
-=======
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles 5
->>>>>>> parent of ba72ac2 (Add: database class)
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/projectLib.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles 0
-.PHONY : CMakeFiles/projectLib.dir/rule
+# Recursive "codegen" directory target.
+src/db/codegen: src/db/CMakeFiles/db.dir/codegen
+.PHONY : src/db/codegen
 
-# Convenience name for target.
-projectLib: CMakeFiles/projectLib.dir/rule
-.PHONY : projectLib
+# Recursive "preinstall" directory target.
+src/db/preinstall:
+.PHONY : src/db/preinstall
 
-# codegen rule for target.
-CMakeFiles/projectLib.dir/codegen:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/projectLib.dir/build.make CMakeFiles/projectLib.dir/codegen
-<<<<<<< HEAD
-<<<<<<< HEAD
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=15,16,17,18,19,20 "Finished codegen for target projectLib"
-=======
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=14,15,16,17,18 "Finished codegen for target projectLib"
->>>>>>> parent of ba72ac2 (Add: database class)
-=======
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=14,15,16,17,18 "Finished codegen for target projectLib"
->>>>>>> parent of ba72ac2 (Add: database class)
-.PHONY : CMakeFiles/projectLib.dir/codegen
+# Recursive "clean" directory target.
+src/db/clean: src/db/CMakeFiles/db.dir/clean
+.PHONY : src/db/clean
 
-# clean rule for target.
-CMakeFiles/projectLib.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/projectLib.dir/build.make CMakeFiles/projectLib.dir/clean
-.PHONY : CMakeFiles/projectLib.dir/clean
+#=============================================================================
+# Directory level rules for directory src/exception
+
+# Recursive "all" directory target.
+src/exception/all:
+.PHONY : src/exception/all
+
+# Recursive "codegen" directory target.
+src/exception/codegen:
+.PHONY : src/exception/codegen
+
+# Recursive "preinstall" directory target.
+src/exception/preinstall:
+.PHONY : src/exception/preinstall
+
+# Recursive "clean" directory target.
+src/exception/clean:
+.PHONY : src/exception/clean
+
+#=============================================================================
+# Directory level rules for directory src/server
+
+# Recursive "all" directory target.
+src/server/all: src/server/CMakeFiles/server.dir/all
+.PHONY : src/server/all
+
+# Recursive "codegen" directory target.
+src/server/codegen: src/server/CMakeFiles/server.dir/codegen
+.PHONY : src/server/codegen
+
+# Recursive "preinstall" directory target.
+src/server/preinstall:
+.PHONY : src/server/preinstall
+
+# Recursive "clean" directory target.
+src/server/clean: src/server/CMakeFiles/server.dir/clean
+.PHONY : src/server/clean
+
+#=============================================================================
+# Directory level rules for directory src/user
+
+# Recursive "all" directory target.
+src/user/all: src/user/CMakeFiles/user.dir/all
+.PHONY : src/user/all
+
+# Recursive "codegen" directory target.
+src/user/codegen: src/user/CMakeFiles/user.dir/codegen
+.PHONY : src/user/codegen
+
+# Recursive "preinstall" directory target.
+src/user/preinstall:
+.PHONY : src/user/preinstall
+
+# Recursive "clean" directory target.
+src/user/clean: src/user/CMakeFiles/user.dir/clean
+.PHONY : src/user/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/project.dir
 
 # All Build rule for target.
-CMakeFiles/project.dir/all:
+CMakeFiles/project.dir/all: src/db/CMakeFiles/db.dir/all
+CMakeFiles/project.dir/all: src/user/CMakeFiles/user.dir/all
+CMakeFiles/project.dir/all: src/server/CMakeFiles/server.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/build
-<<<<<<< HEAD
-<<<<<<< HEAD
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=9,10,11,12,13,14 "Built target project"
-=======
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=9,10,11,12,13 "Built target project"
->>>>>>> parent of ba72ac2 (Add: database class)
-=======
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=9,10,11,12,13 "Built target project"
->>>>>>> parent of ba72ac2 (Add: database class)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=11,12 "Built target project"
 .PHONY : CMakeFiles/project.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/project.dir/rule: cmake_check_build_system
-<<<<<<< HEAD
-<<<<<<< HEAD
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles 6
-=======
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles 5
->>>>>>> parent of ba72ac2 (Add: database class)
-=======
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles 5
->>>>>>> parent of ba72ac2 (Add: database class)
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles 9
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/project.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles 0
 .PHONY : CMakeFiles/project.dir/rule
@@ -277,15 +296,7 @@ project: CMakeFiles/project.dir/rule
 # codegen rule for target.
 CMakeFiles/project.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/codegen
-<<<<<<< HEAD
-<<<<<<< HEAD
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=9,10,11,12,13,14 "Finished codegen for target project"
-=======
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=9,10,11,12,13 "Finished codegen for target project"
->>>>>>> parent of ba72ac2 (Add: database class)
-=======
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=9,10,11,12,13 "Finished codegen for target project"
->>>>>>> parent of ba72ac2 (Add: database class)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=11,12 "Finished codegen for target project"
 .PHONY : CMakeFiles/project.dir/codegen
 
 # clean rule for target.
@@ -1193,33 +1204,19 @@ CMakeFiles/ContinuousSubmit.dir/clean:
 # Target rules for target CMakeFiles/projectTests.dir
 
 # All Build rule for target.
-CMakeFiles/projectTests.dir/all: CMakeFiles/projectLib.dir/all
+CMakeFiles/projectTests.dir/all: src/db/CMakeFiles/db.dir/all
+CMakeFiles/projectTests.dir/all: src/user/CMakeFiles/user.dir/all
+CMakeFiles/projectTests.dir/all: src/server/CMakeFiles/server.dir/all
 CMakeFiles/projectTests.dir/all: external/googletest/CMakeFiles/gtest.dir/all
 CMakeFiles/projectTests.dir/all: external/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/projectTests.dir/build.make CMakeFiles/projectTests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/projectTests.dir/build.make CMakeFiles/projectTests.dir/build
-<<<<<<< HEAD
-<<<<<<< HEAD
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=21,22 "Built target projectTests"
-=======
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=19,20 "Built target projectTests"
->>>>>>> parent of ba72ac2 (Add: database class)
-=======
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=19,20 "Built target projectTests"
->>>>>>> parent of ba72ac2 (Add: database class)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=13,14 "Built target projectTests"
 .PHONY : CMakeFiles/projectTests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/projectTests.dir/rule: cmake_check_build_system
-<<<<<<< HEAD
-<<<<<<< HEAD
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles 12
-=======
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles 11
->>>>>>> parent of ba72ac2 (Add: database class)
-=======
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles 11
->>>>>>> parent of ba72ac2 (Add: database class)
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/projectTests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles 0
 .PHONY : CMakeFiles/projectTests.dir/rule
@@ -1231,15 +1228,7 @@ projectTests: CMakeFiles/projectTests.dir/rule
 # codegen rule for target.
 CMakeFiles/projectTests.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/projectTests.dir/build.make CMakeFiles/projectTests.dir/codegen
-<<<<<<< HEAD
-<<<<<<< HEAD
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=21,22 "Finished codegen for target projectTests"
-=======
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=19,20 "Finished codegen for target projectTests"
->>>>>>> parent of ba72ac2 (Add: database class)
-=======
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=19,20 "Finished codegen for target projectTests"
->>>>>>> parent of ba72ac2 (Add: database class)
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=13,14 "Finished codegen for target projectTests"
 .PHONY : CMakeFiles/projectTests.dir/codegen
 
 # clean rule for target.
@@ -1248,13 +1237,109 @@ CMakeFiles/projectTests.dir/clean:
 .PHONY : CMakeFiles/projectTests.dir/clean
 
 #=============================================================================
+# Target rules for target src/db/CMakeFiles/db.dir
+
+# All Build rule for target.
+src/db/CMakeFiles/db.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/db/CMakeFiles/db.dir/build.make src/db/CMakeFiles/db.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/db/CMakeFiles/db.dir/build.make src/db/CMakeFiles/db.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=1,2 "Built target db"
+.PHONY : src/db/CMakeFiles/db.dir/all
+
+# Build rule for subdir invocation for target.
+src/db/CMakeFiles/db.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/db/CMakeFiles/db.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles 0
+.PHONY : src/db/CMakeFiles/db.dir/rule
+
+# Convenience name for target.
+db: src/db/CMakeFiles/db.dir/rule
+.PHONY : db
+
+# codegen rule for target.
+src/db/CMakeFiles/db.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f src/db/CMakeFiles/db.dir/build.make src/db/CMakeFiles/db.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=1,2 "Finished codegen for target db"
+.PHONY : src/db/CMakeFiles/db.dir/codegen
+
+# clean rule for target.
+src/db/CMakeFiles/db.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/db/CMakeFiles/db.dir/build.make src/db/CMakeFiles/db.dir/clean
+.PHONY : src/db/CMakeFiles/db.dir/clean
+
+#=============================================================================
+# Target rules for target src/user/CMakeFiles/user.dir
+
+# All Build rule for target.
+src/user/CMakeFiles/user.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/user/CMakeFiles/user.dir/build.make src/user/CMakeFiles/user.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/user/CMakeFiles/user.dir/build.make src/user/CMakeFiles/user.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=18,19 "Built target user"
+.PHONY : src/user/CMakeFiles/user.dir/all
+
+# Build rule for subdir invocation for target.
+src/user/CMakeFiles/user.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/user/CMakeFiles/user.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles 0
+.PHONY : src/user/CMakeFiles/user.dir/rule
+
+# Convenience name for target.
+user: src/user/CMakeFiles/user.dir/rule
+.PHONY : user
+
+# codegen rule for target.
+src/user/CMakeFiles/user.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f src/user/CMakeFiles/user.dir/build.make src/user/CMakeFiles/user.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=18,19 "Finished codegen for target user"
+.PHONY : src/user/CMakeFiles/user.dir/codegen
+
+# clean rule for target.
+src/user/CMakeFiles/user.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/user/CMakeFiles/user.dir/build.make src/user/CMakeFiles/user.dir/clean
+.PHONY : src/user/CMakeFiles/user.dir/clean
+
+#=============================================================================
+# Target rules for target src/server/CMakeFiles/server.dir
+
+# All Build rule for target.
+src/server/CMakeFiles/server.dir/all: src/user/CMakeFiles/user.dir/all
+	$(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/server.dir/build.make src/server/CMakeFiles/server.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/server.dir/build.make src/server/CMakeFiles/server.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=15,16,17 "Built target server"
+.PHONY : src/server/CMakeFiles/server.dir/all
+
+# Build rule for subdir invocation for target.
+src/server/CMakeFiles/server.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles 5
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/server/CMakeFiles/server.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles 0
+.PHONY : src/server/CMakeFiles/server.dir/rule
+
+# Convenience name for target.
+server: src/server/CMakeFiles/server.dir/rule
+.PHONY : server
+
+# codegen rule for target.
+src/server/CMakeFiles/server.dir/codegen:
+	$(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/server.dir/build.make src/server/CMakeFiles/server.dir/codegen
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=15,16,17 "Finished codegen for target server"
+.PHONY : src/server/CMakeFiles/server.dir/codegen
+
+# clean rule for target.
+src/server/CMakeFiles/server.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/server.dir/build.make src/server/CMakeFiles/server.dir/clean
+.PHONY : src/server/CMakeFiles/server.dir/clean
+
+#=============================================================================
 # Target rules for target external/googlemock/CMakeFiles/gmock.dir
 
 # All Build rule for target.
 external/googlemock/CMakeFiles/gmock.dir/all: external/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f external/googlemock/CMakeFiles/gmock.dir/build.make external/googlemock/CMakeFiles/gmock.dir/depend
 	$(MAKE) $(MAKESILENT) -f external/googlemock/CMakeFiles/gmock.dir/build.make external/googlemock/CMakeFiles/gmock.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=1,2 "Built target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=3,4 "Built target gmock"
 .PHONY : external/googlemock/CMakeFiles/gmock.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1271,7 +1356,7 @@ gmock: external/googlemock/CMakeFiles/gmock.dir/rule
 # codegen rule for target.
 external/googlemock/CMakeFiles/gmock.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f external/googlemock/CMakeFiles/gmock.dir/build.make external/googlemock/CMakeFiles/gmock.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=1,2 "Finished codegen for target gmock"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=3,4 "Finished codegen for target gmock"
 .PHONY : external/googlemock/CMakeFiles/gmock.dir/codegen
 
 # clean rule for target.
@@ -1287,7 +1372,7 @@ external/googlemock/CMakeFiles/gmock_main.dir/all: external/googlemock/CMakeFile
 external/googlemock/CMakeFiles/gmock_main.dir/all: external/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f external/googlemock/CMakeFiles/gmock_main.dir/build.make external/googlemock/CMakeFiles/gmock_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f external/googlemock/CMakeFiles/gmock_main.dir/build.make external/googlemock/CMakeFiles/gmock_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=3,4 "Built target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=5,6 "Built target gmock_main"
 .PHONY : external/googlemock/CMakeFiles/gmock_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1304,7 +1389,7 @@ gmock_main: external/googlemock/CMakeFiles/gmock_main.dir/rule
 # codegen rule for target.
 external/googlemock/CMakeFiles/gmock_main.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f external/googlemock/CMakeFiles/gmock_main.dir/build.make external/googlemock/CMakeFiles/gmock_main.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=3,4 "Finished codegen for target gmock_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=5,6 "Finished codegen for target gmock_main"
 .PHONY : external/googlemock/CMakeFiles/gmock_main.dir/codegen
 
 # clean rule for target.
@@ -1319,7 +1404,7 @@ external/googlemock/CMakeFiles/gmock_main.dir/clean:
 external/googletest/CMakeFiles/gtest.dir/all:
 	$(MAKE) $(MAKESILENT) -f external/googletest/CMakeFiles/gtest.dir/build.make external/googletest/CMakeFiles/gtest.dir/depend
 	$(MAKE) $(MAKESILENT) -f external/googletest/CMakeFiles/gtest.dir/build.make external/googletest/CMakeFiles/gtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=5,6 "Built target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=7,8 "Built target gtest"
 .PHONY : external/googletest/CMakeFiles/gtest.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1336,7 +1421,7 @@ gtest: external/googletest/CMakeFiles/gtest.dir/rule
 # codegen rule for target.
 external/googletest/CMakeFiles/gtest.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f external/googletest/CMakeFiles/gtest.dir/build.make external/googletest/CMakeFiles/gtest.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=5,6 "Finished codegen for target gtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=7,8 "Finished codegen for target gtest"
 .PHONY : external/googletest/CMakeFiles/gtest.dir/codegen
 
 # clean rule for target.
@@ -1351,7 +1436,7 @@ external/googletest/CMakeFiles/gtest.dir/clean:
 external/googletest/CMakeFiles/gtest_main.dir/all: external/googletest/CMakeFiles/gtest.dir/all
 	$(MAKE) $(MAKESILENT) -f external/googletest/CMakeFiles/gtest_main.dir/build.make external/googletest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f external/googletest/CMakeFiles/gtest_main.dir/build.make external/googletest/CMakeFiles/gtest_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=7,8 "Built target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=9,10 "Built target gtest_main"
 .PHONY : external/googletest/CMakeFiles/gtest_main.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1368,7 +1453,7 @@ gtest_main: external/googletest/CMakeFiles/gtest_main.dir/rule
 # codegen rule for target.
 external/googletest/CMakeFiles/gtest_main.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f external/googletest/CMakeFiles/gtest_main.dir/build.make external/googletest/CMakeFiles/gtest_main.dir/codegen
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=7,8 "Finished codegen for target gtest_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=9,10 "Finished codegen for target gtest_main"
 .PHONY : external/googletest/CMakeFiles/gtest_main.dir/codegen
 
 # clean rule for target.

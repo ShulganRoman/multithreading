@@ -1641,7 +1641,8 @@ src/server/CMakeFiles/server.dir/TestServer.cpp.o: /Users/romansulgan/repos/mult
   /Users/romansulgan/repos/multithreading/src/exception/InvalidDeleteUser.h \
   /Users/romansulgan/repos/multithreading/src/user/TestUser.h \
   /Users/romansulgan/repos/multithreading/src/server/IServer.h \
-  /Users/romansulgan/repos/multithreading/src/server/TestServer.h
+  /Users/romansulgan/repos/multithreading/src/server/TestServer.h \
+  /Users/romansulgan/repos/multithreading/src/user/TestUser.h
 
 
 /Users/romansulgan/repos/multithreading/src/server/TestServer.h:

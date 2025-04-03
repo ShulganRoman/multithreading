@@ -172,19 +172,6 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named projectLib
-
-# Build rule for target.
-projectLib: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 projectLib
-.PHONY : projectLib
-
-# fast build rule for target.
-projectLib/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/projectLib.dir/build.make CMakeFiles/projectLib.dir/build
-.PHONY : projectLib/fast
-
-#=============================================================================
 # Target rules for targets named project
 
 # Build rule for target.
@@ -575,6 +562,45 @@ projectTests/fast:
 .PHONY : projectTests/fast
 
 #=============================================================================
+# Target rules for targets named db
+
+# Build rule for target.
+db: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 db
+.PHONY : db
+
+# fast build rule for target.
+db/fast:
+	$(MAKE) $(MAKESILENT) -f src/db/CMakeFiles/db.dir/build.make src/db/CMakeFiles/db.dir/build
+.PHONY : db/fast
+
+#=============================================================================
+# Target rules for targets named user
+
+# Build rule for target.
+user: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 user
+.PHONY : user
+
+# fast build rule for target.
+user/fast:
+	$(MAKE) $(MAKESILENT) -f src/user/CMakeFiles/user.dir/build.make src/user/CMakeFiles/user.dir/build
+.PHONY : user/fast
+
+#=============================================================================
+# Target rules for targets named server
+
+# Build rule for target.
+server: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 server
+.PHONY : server
+
+# fast build rule for target.
+server/fast:
+	$(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/server.dir/build.make src/server/CMakeFiles/server.dir/build
+.PHONY : server/fast
+
+#=============================================================================
 # Target rules for targets named gmock
 
 # Build rule for target.
@@ -626,39 +652,11 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f external/googletest/CMakeFiles/gtest_main.dir/build.make external/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
-src/db/Database.o: src/db/Database.cpp.o
-.PHONY : src/db/Database.o
-
-# target to build an object file
-src/db/Database.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/projectLib.dir/build.make CMakeFiles/projectLib.dir/src/db/Database.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/db/Database.cpp.o
-.PHONY : src/db/Database.cpp.o
-
-src/db/Database.i: src/db/Database.cpp.i
-.PHONY : src/db/Database.i
-
-# target to preprocess a source file
-src/db/Database.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/projectLib.dir/build.make CMakeFiles/projectLib.dir/src/db/Database.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/db/Database.cpp.i
-.PHONY : src/db/Database.cpp.i
-
-src/db/Database.s: src/db/Database.cpp.s
-.PHONY : src/db/Database.s
-
-# target to generate assembly for a file
-src/db/Database.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/projectLib.dir/build.make CMakeFiles/projectLib.dir/src/db/Database.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/db/Database.cpp.s
-.PHONY : src/db/Database.cpp.s
-
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/projectLib.dir/build.make CMakeFiles/projectLib.dir/src/main.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
@@ -667,7 +665,6 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/projectLib.dir/build.make CMakeFiles/projectLib.dir/src/main.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
@@ -676,90 +673,8 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/projectLib.dir/build.make CMakeFiles/projectLib.dir/src/main.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
-
-src/server/Server.o: src/server/Server.cpp.o
-.PHONY : src/server/Server.o
-
-# target to build an object file
-src/server/Server.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/projectLib.dir/build.make CMakeFiles/projectLib.dir/src/server/Server.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/server/Server.cpp.o
-.PHONY : src/server/Server.cpp.o
-
-src/server/Server.i: src/server/Server.cpp.i
-.PHONY : src/server/Server.i
-
-# target to preprocess a source file
-src/server/Server.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/projectLib.dir/build.make CMakeFiles/projectLib.dir/src/server/Server.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/server/Server.cpp.i
-.PHONY : src/server/Server.cpp.i
-
-src/server/Server.s: src/server/Server.cpp.s
-.PHONY : src/server/Server.s
-
-# target to generate assembly for a file
-src/server/Server.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/projectLib.dir/build.make CMakeFiles/projectLib.dir/src/server/Server.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/server/Server.cpp.s
-.PHONY : src/server/Server.cpp.s
-
-src/server/TestServer.o: src/server/TestServer.cpp.o
-.PHONY : src/server/TestServer.o
-
-# target to build an object file
-src/server/TestServer.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/projectLib.dir/build.make CMakeFiles/projectLib.dir/src/server/TestServer.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/server/TestServer.cpp.o
-.PHONY : src/server/TestServer.cpp.o
-
-src/server/TestServer.i: src/server/TestServer.cpp.i
-.PHONY : src/server/TestServer.i
-
-# target to preprocess a source file
-src/server/TestServer.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/projectLib.dir/build.make CMakeFiles/projectLib.dir/src/server/TestServer.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/server/TestServer.cpp.i
-.PHONY : src/server/TestServer.cpp.i
-
-src/server/TestServer.s: src/server/TestServer.cpp.s
-.PHONY : src/server/TestServer.s
-
-# target to generate assembly for a file
-src/server/TestServer.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/projectLib.dir/build.make CMakeFiles/projectLib.dir/src/server/TestServer.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/server/TestServer.cpp.s
-.PHONY : src/server/TestServer.cpp.s
-
-src/user/User.o: src/user/User.cpp.o
-.PHONY : src/user/User.o
-
-# target to build an object file
-src/user/User.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/projectLib.dir/build.make CMakeFiles/projectLib.dir/src/user/User.cpp.o
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/user/User.cpp.o
-.PHONY : src/user/User.cpp.o
-
-src/user/User.i: src/user/User.cpp.i
-.PHONY : src/user/User.i
-
-# target to preprocess a source file
-src/user/User.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/projectLib.dir/build.make CMakeFiles/projectLib.dir/src/user/User.cpp.i
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/user/User.cpp.i
-.PHONY : src/user/User.cpp.i
-
-src/user/User.s: src/user/User.cpp.s
-.PHONY : src/user/User.s
-
-# target to generate assembly for a file
-src/user/User.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/projectLib.dir/build.make CMakeFiles/projectLib.dir/src/user/User.cpp.s
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/user/User.cpp.s
-.PHONY : src/user/User.cpp.s
 
 tests/ServerTestBoost.o: tests/ServerTestBoost.cpp.o
 .PHONY : tests/ServerTestBoost.o
@@ -826,34 +741,18 @@ help:
 	@echo "... NightlySubmit"
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
+	@echo "... db"
 	@echo "... gmock"
 	@echo "... gmock_main"
 	@echo "... gtest"
 	@echo "... gtest_main"
 	@echo "... project"
-	@echo "... projectLib"
 	@echo "... projectTests"
-<<<<<<< HEAD
-<<<<<<< HEAD
-	@echo "... src/db/Database.o"
-	@echo "... src/db/Database.i"
-	@echo "... src/db/Database.s"
-=======
->>>>>>> parent of ba72ac2 (Add: database class)
-=======
->>>>>>> parent of ba72ac2 (Add: database class)
+	@echo "... server"
+	@echo "... user"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
-	@echo "... src/server/Server.o"
-	@echo "... src/server/Server.i"
-	@echo "... src/server/Server.s"
-	@echo "... src/server/TestServer.o"
-	@echo "... src/server/TestServer.i"
-	@echo "... src/server/TestServer.s"
-	@echo "... src/user/User.o"
-	@echo "... src/user/User.i"
-	@echo "... src/user/User.s"
 	@echo "... tests/ServerTestBoost.o"
 	@echo "... tests/ServerTestBoost.i"
 	@echo "... tests/ServerTestBoost.s"

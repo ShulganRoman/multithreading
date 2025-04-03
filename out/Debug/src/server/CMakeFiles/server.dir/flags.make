@@ -4,7 +4,7 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/opt/homebrew/include -I/opt/homebrew/Cellar/libpqxx/7.10.0/include -I/Users/romansulgan/repos/multithreading/src/server -I/Users/romansulgan/repos/multithreading/src/user -I/Users/romansulgan/repos/multithreading/src/exception
+CXX_INCLUDES = -I/opt/homebrew/include -I/opt/homebrew/Cellar/libpqxx/7.10.0/include -I/Users/romansulgan/repos/multithreading/src/server -I/Users/romansulgan/repos/multithreading/src/exception -I/Users/romansulgan/repos/multithreading/src/user
 
 CXX_FLAGSarm64 = -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk
 

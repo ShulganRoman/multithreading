@@ -5,4 +5,8 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 include("/Users/romansulgan/repos/multithreading/out/Debug/projectTests[1]_include.cmake")
+subdirs("src/db")
+subdirs("src/exception")
+subdirs("src/user")
+subdirs("src/server")
 subdirs("external")

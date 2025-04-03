@@ -818,4 +818,5 @@ src/server/CMakeFiles/server.dir/TestServer.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__hash_table \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__iterator/ranges_iterator_traits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__node_handle \
-  /Users/romansulgan/repos/multithreading/src/exception/InvalidDeleteUser.h
+  /Users/romansulgan/repos/multithreading/src/exception/InvalidDeleteUser.h \
+  /Users/romansulgan/repos/multithreading/src/user/TestUser.h

@@ -23,11 +23,6 @@ BUILD_TESTING:BOOL=ON
 //The directory containing a CMake configuration file for Boost.
 Boost_DIR:PATH=/opt/homebrew/lib/cmake/Boost-1.87.0
 
-//Path to a file.
-Boost_INCLUDE_DIR:PATH=/opt/homebrew/include
-
-Boost_SYSTEM_LIBRARY_RELEASE:STRING=/opt/homebrew/lib/libboost_system.dylib
-
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=CMAKE_ADDR2LINE-NOTFOUND
 
@@ -302,9 +297,6 @@ CTEST_SUBMIT_RETRY_COUNT:STRING=3
 //How long to wait between timed-out CTest submissions.
 CTEST_SUBMIT_RETRY_DELAY:STRING=5
 
-//The directory containing a CMake configuration file for Catch2.
-Catch2_DIR:PATH=/opt/homebrew/lib/cmake/Catch2
-
 //Maximum time allowed before CTest will kill the test.
 DART_TESTING_TIMEOUT:STRING=1500
 
@@ -398,9 +390,6 @@ gtest_hide_internal_symbols:BOOL=OFF
 //Path to a library.
 pkgcfg_lib_PQXX_pqxx:FILEPATH=/opt/homebrew/Cellar/libpqxx/7.10.0/lib/libpqxx.dylib
 
-//Dependencies for the target
-projectLib_LIB_DEPENDS:STATIC=general;Boost::system;general;pqxx;
-
 //Value Computed by CMake
 project_BINARY_DIR:STATIC=/Users/romansulgan/repos/multithreading/out/Debug
 
@@ -410,13 +399,14 @@ project_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 project_SOURCE_DIR:STATIC=/Users/romansulgan/repos/multithreading
 
+//Dependencies for the target
+server_LIB_DEPENDS:STATIC=general;user;
+
 
 ########################
 # INTERNAL cache entries
 ########################
 
-//ADVANCED property for variable: Boost_DIR
-Boost_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_ADDR2LINE
 CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
@@ -545,7 +535,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -600,8 +590,6 @@ CTEST_SUBMIT_RETRY_COUNT-ADVANCED:INTERNAL=1
 CTEST_SUBMIT_RETRY_DELAY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: DART_TESTING_TIMEOUT
 DART_TESTING_TIMEOUT-ADVANCED:INTERNAL=1
-//Details about finding Boost
-FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[/opt/homebrew/lib/cmake/Boost-1.87.0/BoostConfig.cmake][cfound components: system ][v1.87.0()]
 //Details about finding PkgConfig
 FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/opt/homebrew/bin/pkg-config][v2.4.3()]
 //Details about finding Threads

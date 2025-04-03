@@ -11,15 +11,16 @@ pkg_check_modules(PQXX REQUIRED libpqxx)
 include_directories(${PQXX_INCLUDE_DIRS})
 link_directories(${PQXX_LIBRARY_DIRS})
 
-file(GLOB_RECURSE SOURCES "src/*.cpp")
+add_subdirectory(src/db)
+add_subdirectory(src/exception)
+add_subdirectory(src/user)
+add_subdirectory(src/server)
 
-add_library(projectLib ${SOURCES})
-target_link_libraries(projectLib ${Boost_LIBRARIES} ${PQXX_LIBRARIES})
+set(MAIN_SOURCE server user except db ${Boost_LIBRARIES} ${PQXX_LIBRARIES})
 
-add_executable(project ${SOURCES})
-target_link_libraries(project PRIVATE ${Boost_LIBRARIES} ${PQXX_LIBRARIES})
+add_executable(project src/main.cpp)
+target_link_libraries(project PRIVATE ${MAIN_SOURCE})
 
-find_package(Catch2 REQUIRED)
 file(GLOB_RECURSE TEST_SOURCES "tests/*.cpp")
 
 include(cmake/UpdateSubmodules.cmake)
@@ -28,8 +29,7 @@ add_subdirectory(external)
 include(CTest)
 if(TEST_SOURCES)
   add_executable(projectTests ${TEST_SOURCES})
-  target_link_libraries(projectTests PRIVATE GTest::gtest_main
-                                                     projectLib)
+  target_link_libraries(projectTests PRIVATE ${MAIN_SOURCE} GTest::gtest_main)
   include(GoogleTest)
   gtest_discover_tests(projectTests)
 endif()
