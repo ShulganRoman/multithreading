@@ -8,6 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+<<<<<<< HEAD
+  "/Users/romansulgan/repos/multithreading/src/db/Database.cpp" "CMakeFiles/projectLib.dir/src/db/Database.cpp.o" "gcc" "CMakeFiles/projectLib.dir/src/db/Database.cpp.o.d"
+=======
+>>>>>>> parent of ba72ac2 (Add: database class)
   "/Users/romansulgan/repos/multithreading/src/main.cpp" "CMakeFiles/projectLib.dir/src/main.cpp.o" "gcc" "CMakeFiles/projectLib.dir/src/main.cpp.o.d"
   "/Users/romansulgan/repos/multithreading/src/server/Server.cpp" "CMakeFiles/projectLib.dir/src/server/Server.cpp.o" "gcc" "CMakeFiles/projectLib.dir/src/server/Server.cpp.o.d"
   "/Users/romansulgan/repos/multithreading/src/server/TestServer.cpp" "CMakeFiles/projectLib.dir/src/server/TestServer.cpp.o" "gcc" "CMakeFiles/projectLib.dir/src/server/TestServer.cpp.o.d"

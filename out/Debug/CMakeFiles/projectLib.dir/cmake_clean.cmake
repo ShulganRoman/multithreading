@@ -1,4 +1,9 @@
 file(REMOVE_RECURSE
+<<<<<<< HEAD
+  "CMakeFiles/projectLib.dir/src/db/Database.cpp.o"
+  "CMakeFiles/projectLib.dir/src/db/Database.cpp.o.d"
+=======
+>>>>>>> parent of ba72ac2 (Add: database class)
   "CMakeFiles/projectLib.dir/src/main.cpp.o"
   "CMakeFiles/projectLib.dir/src/main.cpp.o.d"
   "CMakeFiles/projectLib.dir/src/server/Server.cpp.o"

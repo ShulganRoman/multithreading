@@ -188,12 +188,20 @@ external/googletest/clean: external/googletest/CMakeFiles/gtest_main.dir/clean
 CMakeFiles/projectLib.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/projectLib.dir/build.make CMakeFiles/projectLib.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/projectLib.dir/build.make CMakeFiles/projectLib.dir/build
+<<<<<<< HEAD
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=15,16,17,18,19,20 "Built target projectLib"
+=======
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=14,15,16,17,18 "Built target projectLib"
+>>>>>>> parent of ba72ac2 (Add: database class)
 .PHONY : CMakeFiles/projectLib.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/projectLib.dir/rule: cmake_check_build_system
+<<<<<<< HEAD
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles 6
+=======
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles 5
+>>>>>>> parent of ba72ac2 (Add: database class)
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/projectLib.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles 0
 .PHONY : CMakeFiles/projectLib.dir/rule
@@ -205,7 +213,11 @@ projectLib: CMakeFiles/projectLib.dir/rule
 # codegen rule for target.
 CMakeFiles/projectLib.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/projectLib.dir/build.make CMakeFiles/projectLib.dir/codegen
+<<<<<<< HEAD
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=15,16,17,18,19,20 "Finished codegen for target projectLib"
+=======
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=14,15,16,17,18 "Finished codegen for target projectLib"
+>>>>>>> parent of ba72ac2 (Add: database class)
 .PHONY : CMakeFiles/projectLib.dir/codegen
 
 # clean rule for target.
@@ -220,12 +232,20 @@ CMakeFiles/projectLib.dir/clean:
 CMakeFiles/project.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/build
+<<<<<<< HEAD
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=9,10,11,12,13,14 "Built target project"
+=======
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=9,10,11,12,13 "Built target project"
+>>>>>>> parent of ba72ac2 (Add: database class)
 .PHONY : CMakeFiles/project.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/project.dir/rule: cmake_check_build_system
+<<<<<<< HEAD
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles 6
+=======
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles 5
+>>>>>>> parent of ba72ac2 (Add: database class)
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/project.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles 0
 .PHONY : CMakeFiles/project.dir/rule
@@ -237,7 +257,11 @@ project: CMakeFiles/project.dir/rule
 # codegen rule for target.
 CMakeFiles/project.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/codegen
+<<<<<<< HEAD
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=9,10,11,12,13,14 "Finished codegen for target project"
+=======
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=9,10,11,12,13 "Finished codegen for target project"
+>>>>>>> parent of ba72ac2 (Add: database class)
 .PHONY : CMakeFiles/project.dir/codegen
 
 # clean rule for target.
@@ -1150,12 +1174,20 @@ CMakeFiles/projectTests.dir/all: external/googletest/CMakeFiles/gtest.dir/all
 CMakeFiles/projectTests.dir/all: external/googletest/CMakeFiles/gtest_main.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/projectTests.dir/build.make CMakeFiles/projectTests.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/projectTests.dir/build.make CMakeFiles/projectTests.dir/build
+<<<<<<< HEAD
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=21,22 "Built target projectTests"
+=======
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=19,20 "Built target projectTests"
+>>>>>>> parent of ba72ac2 (Add: database class)
 .PHONY : CMakeFiles/projectTests.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/projectTests.dir/rule: cmake_check_build_system
+<<<<<<< HEAD
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles 12
+=======
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles 11
+>>>>>>> parent of ba72ac2 (Add: database class)
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/projectTests.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles 0
 .PHONY : CMakeFiles/projectTests.dir/rule
@@ -1167,7 +1199,11 @@ projectTests: CMakeFiles/projectTests.dir/rule
 # codegen rule for target.
 CMakeFiles/projectTests.dir/codegen:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/projectTests.dir/build.make CMakeFiles/projectTests.dir/codegen
+<<<<<<< HEAD
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=21,22 "Finished codegen for target projectTests"
+=======
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=19,20 "Finished codegen for target projectTests"
+>>>>>>> parent of ba72ac2 (Add: database class)
 .PHONY : CMakeFiles/projectTests.dir/codegen
 
 # clean rule for target.

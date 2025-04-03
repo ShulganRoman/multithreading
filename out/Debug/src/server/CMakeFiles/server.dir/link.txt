@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libserver.a CMakeFiles/server.dir/Server.cpp.o CMakeFiles/server.dir/TestServer.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libserver.a

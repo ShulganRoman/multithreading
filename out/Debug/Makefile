@@ -626,6 +626,33 @@ gtest_main/fast:
 	$(MAKE) $(MAKESILENT) -f external/googletest/CMakeFiles/gtest_main.dir/build.make external/googletest/CMakeFiles/gtest_main.dir/build
 .PHONY : gtest_main/fast
 
+src/db/Database.o: src/db/Database.cpp.o
+.PHONY : src/db/Database.o
+
+# target to build an object file
+src/db/Database.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projectLib.dir/build.make CMakeFiles/projectLib.dir/src/db/Database.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/db/Database.cpp.o
+.PHONY : src/db/Database.cpp.o
+
+src/db/Database.i: src/db/Database.cpp.i
+.PHONY : src/db/Database.i
+
+# target to preprocess a source file
+src/db/Database.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projectLib.dir/build.make CMakeFiles/projectLib.dir/src/db/Database.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/db/Database.cpp.i
+.PHONY : src/db/Database.cpp.i
+
+src/db/Database.s: src/db/Database.cpp.s
+.PHONY : src/db/Database.s
+
+# target to generate assembly for a file
+src/db/Database.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projectLib.dir/build.make CMakeFiles/projectLib.dir/src/db/Database.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/db/Database.cpp.s
+.PHONY : src/db/Database.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -806,6 +833,12 @@ help:
 	@echo "... project"
 	@echo "... projectLib"
 	@echo "... projectTests"
+<<<<<<< HEAD
+	@echo "... src/db/Database.o"
+	@echo "... src/db/Database.i"
+	@echo "... src/db/Database.s"
+=======
+>>>>>>> parent of ba72ac2 (Add: database class)
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

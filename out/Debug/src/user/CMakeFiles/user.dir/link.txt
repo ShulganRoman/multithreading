@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libuser.a CMakeFiles/user.dir/User.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libuser.a

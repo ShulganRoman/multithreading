@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/project.dir/src/db/Database.cpp.o"
+  "CMakeFiles/project.dir/src/db/Database.cpp.o.d"
   "CMakeFiles/project.dir/src/main.cpp.o"
   "CMakeFiles/project.dir/src/main.cpp.o.d"
   "CMakeFiles/project.dir/src/server/Server.cpp.o"
