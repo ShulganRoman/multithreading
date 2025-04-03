@@ -834,9 +834,12 @@ help:
 	@echo "... projectLib"
 	@echo "... projectTests"
 <<<<<<< HEAD
+<<<<<<< HEAD
 	@echo "... src/db/Database.o"
 	@echo "... src/db/Database.i"
 	@echo "... src/db/Database.s"
+=======
+>>>>>>> parent of ba72ac2 (Add: database class)
 =======
 >>>>>>> parent of ba72ac2 (Add: database class)
 	@echo "... src/main.o"

@@ -104,7 +104,11 @@ CMakeFiles/project.dir/src/server/Server.cpp.o: CMakeFiles/project.dir/flags.mak
 CMakeFiles/project.dir/src/server/Server.cpp.o: /Users/romansulgan/repos/multithreading/src/server/Server.cpp
 CMakeFiles/project.dir/src/server/Server.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
 <<<<<<< HEAD
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/project.dir/src/server/Server.cpp.o"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/project.dir/src/server/Server.cpp.o"
+>>>>>>> parent of ba72ac2 (Add: database class)
 =======
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/project.dir/src/server/Server.cpp.o"
 >>>>>>> parent of ba72ac2 (Add: database class)
@@ -122,7 +126,11 @@ CMakeFiles/project.dir/src/server/TestServer.cpp.o: CMakeFiles/project.dir/flags
 CMakeFiles/project.dir/src/server/TestServer.cpp.o: /Users/romansulgan/repos/multithreading/src/server/TestServer.cpp
 CMakeFiles/project.dir/src/server/TestServer.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
 <<<<<<< HEAD
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/project.dir/src/server/TestServer.cpp.o"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/project.dir/src/server/TestServer.cpp.o"
+>>>>>>> parent of ba72ac2 (Add: database class)
 =======
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/project.dir/src/server/TestServer.cpp.o"
 >>>>>>> parent of ba72ac2 (Add: database class)
@@ -140,7 +148,11 @@ CMakeFiles/project.dir/src/user/User.cpp.o: CMakeFiles/project.dir/flags.make
 CMakeFiles/project.dir/src/user/User.cpp.o: /Users/romansulgan/repos/multithreading/src/user/User.cpp
 CMakeFiles/project.dir/src/user/User.cpp.o: CMakeFiles/project.dir/compiler_depend.ts
 <<<<<<< HEAD
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/project.dir/src/user/User.cpp.o"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/project.dir/src/user/User.cpp.o"
+>>>>>>> parent of ba72ac2 (Add: database class)
 =======
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/project.dir/src/user/User.cpp.o"
 >>>>>>> parent of ba72ac2 (Add: database class)
@@ -157,7 +169,10 @@ CMakeFiles/project.dir/src/user/User.cpp.s: cmake_force
 # Object files for target project
 project_OBJECTS = \
 <<<<<<< HEAD
+<<<<<<< HEAD
 "CMakeFiles/project.dir/src/db/Database.cpp.o" \
+=======
+>>>>>>> parent of ba72ac2 (Add: database class)
 =======
 >>>>>>> parent of ba72ac2 (Add: database class)
 "CMakeFiles/project.dir/src/main.cpp.o" \
@@ -177,7 +192,11 @@ project: CMakeFiles/project.dir/build.make
 project: /opt/homebrew/lib/libboost_system.dylib
 project: CMakeFiles/project.dir/link.txt
 <<<<<<< HEAD
+<<<<<<< HEAD
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable project"
+=======
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable project"
+>>>>>>> parent of ba72ac2 (Add: database class)
 =======
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable project"
 >>>>>>> parent of ba72ac2 (Add: database class)

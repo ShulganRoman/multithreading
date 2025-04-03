@@ -2,12 +2,15 @@
 {
   "directory": "/Users/romansulgan/repos/multithreading/out/Debug",
 <<<<<<< HEAD
+<<<<<<< HEAD
   "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -I/opt/homebrew/Cellar/libpqxx/7.10.0/include -isystem /opt/homebrew/include -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/projectLib.dir/src/db/Database.cpp.o -c /Users/romansulgan/repos/multithreading/src/db/Database.cpp",
   "file": "/Users/romansulgan/repos/multithreading/src/db/Database.cpp",
   "output": "CMakeFiles/projectLib.dir/src/db/Database.cpp.o"
 },
 {
   "directory": "/Users/romansulgan/repos/multithreading/out/Debug",
+=======
+>>>>>>> parent of ba72ac2 (Add: database class)
 =======
 >>>>>>> parent of ba72ac2 (Add: database class)
   "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -I/opt/homebrew/Cellar/libpqxx/7.10.0/include -isystem /opt/homebrew/include -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/projectLib.dir/src/main.cpp.o -c /Users/romansulgan/repos/multithreading/src/main.cpp",
@@ -35,12 +38,15 @@
 {
   "directory": "/Users/romansulgan/repos/multithreading/out/Debug",
 <<<<<<< HEAD
+<<<<<<< HEAD
   "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -I/opt/homebrew/Cellar/libpqxx/7.10.0/include -isystem /opt/homebrew/include -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/project.dir/src/db/Database.cpp.o -c /Users/romansulgan/repos/multithreading/src/db/Database.cpp",
   "file": "/Users/romansulgan/repos/multithreading/src/db/Database.cpp",
   "output": "CMakeFiles/project.dir/src/db/Database.cpp.o"
 },
 {
   "directory": "/Users/romansulgan/repos/multithreading/out/Debug",
+=======
+>>>>>>> parent of ba72ac2 (Add: database class)
 =======
 >>>>>>> parent of ba72ac2 (Add: database class)
   "command": "/Library/Developer/CommandLineTools/usr/bin/c++ -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -I/opt/homebrew/Cellar/libpqxx/7.10.0/include -isystem /opt/homebrew/include -g -std=gnu++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -o CMakeFiles/project.dir/src/main.cpp.o -c /Users/romansulgan/repos/multithreading/src/main.cpp",
