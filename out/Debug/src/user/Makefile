@@ -185,29 +185,77 @@ user/fast:
 	cd /Users/romansulgan/repos/multithreading/out/Debug && $(MAKE) $(MAKESILENT) -f src/user/CMakeFiles/user.dir/build.make src/user/CMakeFiles/user.dir/build
 .PHONY : user/fast
 
-User.o: User.cpp.o
-.PHONY : User.o
+impls/IUser.o: impls/IUser.cpp.o
+.PHONY : impls/IUser.o
 
 # target to build an object file
-User.cpp.o:
-	cd /Users/romansulgan/repos/multithreading/out/Debug && $(MAKE) $(MAKESILENT) -f src/user/CMakeFiles/user.dir/build.make src/user/CMakeFiles/user.dir/User.cpp.o
-.PHONY : User.cpp.o
+impls/IUser.cpp.o:
+	cd /Users/romansulgan/repos/multithreading/out/Debug && $(MAKE) $(MAKESILENT) -f src/user/CMakeFiles/user.dir/build.make src/user/CMakeFiles/user.dir/impls/IUser.cpp.o
+.PHONY : impls/IUser.cpp.o
 
-User.i: User.cpp.i
-.PHONY : User.i
+impls/IUser.i: impls/IUser.cpp.i
+.PHONY : impls/IUser.i
 
 # target to preprocess a source file
-User.cpp.i:
-	cd /Users/romansulgan/repos/multithreading/out/Debug && $(MAKE) $(MAKESILENT) -f src/user/CMakeFiles/user.dir/build.make src/user/CMakeFiles/user.dir/User.cpp.i
-.PHONY : User.cpp.i
+impls/IUser.cpp.i:
+	cd /Users/romansulgan/repos/multithreading/out/Debug && $(MAKE) $(MAKESILENT) -f src/user/CMakeFiles/user.dir/build.make src/user/CMakeFiles/user.dir/impls/IUser.cpp.i
+.PHONY : impls/IUser.cpp.i
 
-User.s: User.cpp.s
-.PHONY : User.s
+impls/IUser.s: impls/IUser.cpp.s
+.PHONY : impls/IUser.s
 
 # target to generate assembly for a file
-User.cpp.s:
-	cd /Users/romansulgan/repos/multithreading/out/Debug && $(MAKE) $(MAKESILENT) -f src/user/CMakeFiles/user.dir/build.make src/user/CMakeFiles/user.dir/User.cpp.s
-.PHONY : User.cpp.s
+impls/IUser.cpp.s:
+	cd /Users/romansulgan/repos/multithreading/out/Debug && $(MAKE) $(MAKESILENT) -f src/user/CMakeFiles/user.dir/build.make src/user/CMakeFiles/user.dir/impls/IUser.cpp.s
+.PHONY : impls/IUser.cpp.s
+
+impls/TestUser.o: impls/TestUser.cpp.o
+.PHONY : impls/TestUser.o
+
+# target to build an object file
+impls/TestUser.cpp.o:
+	cd /Users/romansulgan/repos/multithreading/out/Debug && $(MAKE) $(MAKESILENT) -f src/user/CMakeFiles/user.dir/build.make src/user/CMakeFiles/user.dir/impls/TestUser.cpp.o
+.PHONY : impls/TestUser.cpp.o
+
+impls/TestUser.i: impls/TestUser.cpp.i
+.PHONY : impls/TestUser.i
+
+# target to preprocess a source file
+impls/TestUser.cpp.i:
+	cd /Users/romansulgan/repos/multithreading/out/Debug && $(MAKE) $(MAKESILENT) -f src/user/CMakeFiles/user.dir/build.make src/user/CMakeFiles/user.dir/impls/TestUser.cpp.i
+.PHONY : impls/TestUser.cpp.i
+
+impls/TestUser.s: impls/TestUser.cpp.s
+.PHONY : impls/TestUser.s
+
+# target to generate assembly for a file
+impls/TestUser.cpp.s:
+	cd /Users/romansulgan/repos/multithreading/out/Debug && $(MAKE) $(MAKESILENT) -f src/user/CMakeFiles/user.dir/build.make src/user/CMakeFiles/user.dir/impls/TestUser.cpp.s
+.PHONY : impls/TestUser.cpp.s
+
+impls/User.o: impls/User.cpp.o
+.PHONY : impls/User.o
+
+# target to build an object file
+impls/User.cpp.o:
+	cd /Users/romansulgan/repos/multithreading/out/Debug && $(MAKE) $(MAKESILENT) -f src/user/CMakeFiles/user.dir/build.make src/user/CMakeFiles/user.dir/impls/User.cpp.o
+.PHONY : impls/User.cpp.o
+
+impls/User.i: impls/User.cpp.i
+.PHONY : impls/User.i
+
+# target to preprocess a source file
+impls/User.cpp.i:
+	cd /Users/romansulgan/repos/multithreading/out/Debug && $(MAKE) $(MAKESILENT) -f src/user/CMakeFiles/user.dir/build.make src/user/CMakeFiles/user.dir/impls/User.cpp.i
+.PHONY : impls/User.cpp.i
+
+impls/User.s: impls/User.cpp.s
+.PHONY : impls/User.s
+
+# target to generate assembly for a file
+impls/User.cpp.s:
+	cd /Users/romansulgan/repos/multithreading/out/Debug && $(MAKE) $(MAKESILENT) -f src/user/CMakeFiles/user.dir/build.make src/user/CMakeFiles/user.dir/impls/User.cpp.s
+.PHONY : impls/User.cpp.s
 
 # Help Target
 help:
@@ -223,9 +271,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... user"
-	@echo "... User.o"
-	@echo "... User.i"
-	@echo "... User.s"
+	@echo "... impls/IUser.o"
+	@echo "... impls/IUser.i"
+	@echo "... impls/IUser.s"
+	@echo "... impls/TestUser.o"
+	@echo "... impls/TestUser.i"
+	@echo "... impls/TestUser.s"
+	@echo "... impls/User.o"
+	@echo "... impls/User.i"
+	@echo "... impls/User.s"
 .PHONY : help
 
 

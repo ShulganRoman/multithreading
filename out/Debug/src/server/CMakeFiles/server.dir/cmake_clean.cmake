@@ -1,8 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/server.dir/Server.cpp.o"
-  "CMakeFiles/server.dir/Server.cpp.o.d"
-  "CMakeFiles/server.dir/TestServer.cpp.o"
-  "CMakeFiles/server.dir/TestServer.cpp.o.d"
+  "CMakeFiles/server.dir/funcs_impl/IServer.cpp.o"
+  "CMakeFiles/server.dir/funcs_impl/IServer.cpp.o.d"
+  "CMakeFiles/server.dir/funcs_impl/Server.cpp.o"
+  "CMakeFiles/server.dir/funcs_impl/Server.cpp.o.d"
+  "CMakeFiles/server.dir/funcs_impl/TestServer.cpp.o"
+  "CMakeFiles/server.dir/funcs_impl/TestServer.cpp.o.d"
   "libserver.a"
   "libserver.pdb"
 )

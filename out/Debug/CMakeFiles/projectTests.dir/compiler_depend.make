@@ -1018,17 +1018,19 @@ CMakeFiles/projectTests.dir/tests/ServerTestBoost.cpp.o: /Users/romansulgan/repo
   /Users/romansulgan/repos/multithreading/external/googletest/include/gtest/internal/gtest-string.h \
   /Users/romansulgan/repos/multithreading/external/googletest/include/gtest/internal/gtest-type-util.h \
   /Users/romansulgan/repos/multithreading/src/exception/InvalidDeleteUser.h \
-  /Users/romansulgan/repos/multithreading/src/user/TestUser.h \
   /Users/romansulgan/repos/multithreading/src/server/IServer.h \
   /Users/romansulgan/repos/multithreading/src/server/TestServer.h \
+  /Users/romansulgan/repos/multithreading/src/user/IUser.h \
   /Users/romansulgan/repos/multithreading/src/user/TestUser.h
 
+
+/Users/romansulgan/repos/multithreading/src/user/TestUser.h:
+
+/Users/romansulgan/repos/multithreading/src/user/IUser.h:
 
 /Users/romansulgan/repos/multithreading/src/server/TestServer.h:
 
 /Users/romansulgan/repos/multithreading/src/server/IServer.h:
-
-/Users/romansulgan/repos/multithreading/src/user/TestUser.h:
 
 /Users/romansulgan/repos/multithreading/src/exception/InvalidDeleteUser.h:
 

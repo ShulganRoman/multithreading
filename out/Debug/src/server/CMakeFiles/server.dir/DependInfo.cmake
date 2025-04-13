@@ -8,8 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/romansulgan/repos/multithreading/src/server/Server.cpp" "src/server/CMakeFiles/server.dir/Server.cpp.o" "gcc" "src/server/CMakeFiles/server.dir/Server.cpp.o.d"
-  "/Users/romansulgan/repos/multithreading/src/server/TestServer.cpp" "src/server/CMakeFiles/server.dir/TestServer.cpp.o" "gcc" "src/server/CMakeFiles/server.dir/TestServer.cpp.o.d"
+  "/Users/romansulgan/repos/multithreading/src/server/funcs_impl/IServer.cpp" "src/server/CMakeFiles/server.dir/funcs_impl/IServer.cpp.o" "gcc" "src/server/CMakeFiles/server.dir/funcs_impl/IServer.cpp.o.d"
+  "/Users/romansulgan/repos/multithreading/src/server/funcs_impl/Server.cpp" "src/server/CMakeFiles/server.dir/funcs_impl/Server.cpp.o" "gcc" "src/server/CMakeFiles/server.dir/funcs_impl/Server.cpp.o.d"
+  "/Users/romansulgan/repos/multithreading/src/server/funcs_impl/TestServer.cpp" "src/server/CMakeFiles/server.dir/funcs_impl/TestServer.cpp.o" "gcc" "src/server/CMakeFiles/server.dir/funcs_impl/TestServer.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

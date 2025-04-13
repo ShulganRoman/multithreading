@@ -72,47 +72,63 @@ include src/server/CMakeFiles/server.dir/flags.make
 src/server/CMakeFiles/server.dir/codegen:
 .PHONY : src/server/CMakeFiles/server.dir/codegen
 
-src/server/CMakeFiles/server.dir/Server.cpp.o: src/server/CMakeFiles/server.dir/flags.make
-src/server/CMakeFiles/server.dir/Server.cpp.o: /Users/romansulgan/repos/multithreading/src/server/Server.cpp
-src/server/CMakeFiles/server.dir/Server.cpp.o: src/server/CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/server/CMakeFiles/server.dir/Server.cpp.o"
-	cd /Users/romansulgan/repos/multithreading/out/Debug/src/server && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/server/CMakeFiles/server.dir/Server.cpp.o -MF CMakeFiles/server.dir/Server.cpp.o.d -o CMakeFiles/server.dir/Server.cpp.o -c /Users/romansulgan/repos/multithreading/src/server/Server.cpp
+src/server/CMakeFiles/server.dir/funcs_impl/IServer.cpp.o: src/server/CMakeFiles/server.dir/flags.make
+src/server/CMakeFiles/server.dir/funcs_impl/IServer.cpp.o: /Users/romansulgan/repos/multithreading/src/server/funcs_impl/IServer.cpp
+src/server/CMakeFiles/server.dir/funcs_impl/IServer.cpp.o: src/server/CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/server/CMakeFiles/server.dir/funcs_impl/IServer.cpp.o"
+	cd /Users/romansulgan/repos/multithreading/out/Debug/src/server && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/server/CMakeFiles/server.dir/funcs_impl/IServer.cpp.o -MF CMakeFiles/server.dir/funcs_impl/IServer.cpp.o.d -o CMakeFiles/server.dir/funcs_impl/IServer.cpp.o -c /Users/romansulgan/repos/multithreading/src/server/funcs_impl/IServer.cpp
 
-src/server/CMakeFiles/server.dir/Server.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/server.dir/Server.cpp.i"
-	cd /Users/romansulgan/repos/multithreading/out/Debug/src/server && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/romansulgan/repos/multithreading/src/server/Server.cpp > CMakeFiles/server.dir/Server.cpp.i
+src/server/CMakeFiles/server.dir/funcs_impl/IServer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/server.dir/funcs_impl/IServer.cpp.i"
+	cd /Users/romansulgan/repos/multithreading/out/Debug/src/server && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/romansulgan/repos/multithreading/src/server/funcs_impl/IServer.cpp > CMakeFiles/server.dir/funcs_impl/IServer.cpp.i
 
-src/server/CMakeFiles/server.dir/Server.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/server.dir/Server.cpp.s"
-	cd /Users/romansulgan/repos/multithreading/out/Debug/src/server && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/romansulgan/repos/multithreading/src/server/Server.cpp -o CMakeFiles/server.dir/Server.cpp.s
+src/server/CMakeFiles/server.dir/funcs_impl/IServer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/server.dir/funcs_impl/IServer.cpp.s"
+	cd /Users/romansulgan/repos/multithreading/out/Debug/src/server && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/romansulgan/repos/multithreading/src/server/funcs_impl/IServer.cpp -o CMakeFiles/server.dir/funcs_impl/IServer.cpp.s
 
-src/server/CMakeFiles/server.dir/TestServer.cpp.o: src/server/CMakeFiles/server.dir/flags.make
-src/server/CMakeFiles/server.dir/TestServer.cpp.o: /Users/romansulgan/repos/multithreading/src/server/TestServer.cpp
-src/server/CMakeFiles/server.dir/TestServer.cpp.o: src/server/CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/server/CMakeFiles/server.dir/TestServer.cpp.o"
-	cd /Users/romansulgan/repos/multithreading/out/Debug/src/server && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/server/CMakeFiles/server.dir/TestServer.cpp.o -MF CMakeFiles/server.dir/TestServer.cpp.o.d -o CMakeFiles/server.dir/TestServer.cpp.o -c /Users/romansulgan/repos/multithreading/src/server/TestServer.cpp
+src/server/CMakeFiles/server.dir/funcs_impl/Server.cpp.o: src/server/CMakeFiles/server.dir/flags.make
+src/server/CMakeFiles/server.dir/funcs_impl/Server.cpp.o: /Users/romansulgan/repos/multithreading/src/server/funcs_impl/Server.cpp
+src/server/CMakeFiles/server.dir/funcs_impl/Server.cpp.o: src/server/CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/server/CMakeFiles/server.dir/funcs_impl/Server.cpp.o"
+	cd /Users/romansulgan/repos/multithreading/out/Debug/src/server && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/server/CMakeFiles/server.dir/funcs_impl/Server.cpp.o -MF CMakeFiles/server.dir/funcs_impl/Server.cpp.o.d -o CMakeFiles/server.dir/funcs_impl/Server.cpp.o -c /Users/romansulgan/repos/multithreading/src/server/funcs_impl/Server.cpp
 
-src/server/CMakeFiles/server.dir/TestServer.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/server.dir/TestServer.cpp.i"
-	cd /Users/romansulgan/repos/multithreading/out/Debug/src/server && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/romansulgan/repos/multithreading/src/server/TestServer.cpp > CMakeFiles/server.dir/TestServer.cpp.i
+src/server/CMakeFiles/server.dir/funcs_impl/Server.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/server.dir/funcs_impl/Server.cpp.i"
+	cd /Users/romansulgan/repos/multithreading/out/Debug/src/server && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/romansulgan/repos/multithreading/src/server/funcs_impl/Server.cpp > CMakeFiles/server.dir/funcs_impl/Server.cpp.i
 
-src/server/CMakeFiles/server.dir/TestServer.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/server.dir/TestServer.cpp.s"
-	cd /Users/romansulgan/repos/multithreading/out/Debug/src/server && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/romansulgan/repos/multithreading/src/server/TestServer.cpp -o CMakeFiles/server.dir/TestServer.cpp.s
+src/server/CMakeFiles/server.dir/funcs_impl/Server.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/server.dir/funcs_impl/Server.cpp.s"
+	cd /Users/romansulgan/repos/multithreading/out/Debug/src/server && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/romansulgan/repos/multithreading/src/server/funcs_impl/Server.cpp -o CMakeFiles/server.dir/funcs_impl/Server.cpp.s
+
+src/server/CMakeFiles/server.dir/funcs_impl/TestServer.cpp.o: src/server/CMakeFiles/server.dir/flags.make
+src/server/CMakeFiles/server.dir/funcs_impl/TestServer.cpp.o: /Users/romansulgan/repos/multithreading/src/server/funcs_impl/TestServer.cpp
+src/server/CMakeFiles/server.dir/funcs_impl/TestServer.cpp.o: src/server/CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/server/CMakeFiles/server.dir/funcs_impl/TestServer.cpp.o"
+	cd /Users/romansulgan/repos/multithreading/out/Debug/src/server && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/server/CMakeFiles/server.dir/funcs_impl/TestServer.cpp.o -MF CMakeFiles/server.dir/funcs_impl/TestServer.cpp.o.d -o CMakeFiles/server.dir/funcs_impl/TestServer.cpp.o -c /Users/romansulgan/repos/multithreading/src/server/funcs_impl/TestServer.cpp
+
+src/server/CMakeFiles/server.dir/funcs_impl/TestServer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/server.dir/funcs_impl/TestServer.cpp.i"
+	cd /Users/romansulgan/repos/multithreading/out/Debug/src/server && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/romansulgan/repos/multithreading/src/server/funcs_impl/TestServer.cpp > CMakeFiles/server.dir/funcs_impl/TestServer.cpp.i
+
+src/server/CMakeFiles/server.dir/funcs_impl/TestServer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/server.dir/funcs_impl/TestServer.cpp.s"
+	cd /Users/romansulgan/repos/multithreading/out/Debug/src/server && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/romansulgan/repos/multithreading/src/server/funcs_impl/TestServer.cpp -o CMakeFiles/server.dir/funcs_impl/TestServer.cpp.s
 
 # Object files for target server
 server_OBJECTS = \
-"CMakeFiles/server.dir/Server.cpp.o" \
-"CMakeFiles/server.dir/TestServer.cpp.o"
+"CMakeFiles/server.dir/funcs_impl/IServer.cpp.o" \
+"CMakeFiles/server.dir/funcs_impl/Server.cpp.o" \
+"CMakeFiles/server.dir/funcs_impl/TestServer.cpp.o"
 
 # External object files for target server
 server_EXTERNAL_OBJECTS =
 
-src/server/libserver.a: src/server/CMakeFiles/server.dir/Server.cpp.o
-src/server/libserver.a: src/server/CMakeFiles/server.dir/TestServer.cpp.o
+src/server/libserver.a: src/server/CMakeFiles/server.dir/funcs_impl/IServer.cpp.o
+src/server/libserver.a: src/server/CMakeFiles/server.dir/funcs_impl/Server.cpp.o
+src/server/libserver.a: src/server/CMakeFiles/server.dir/funcs_impl/TestServer.cpp.o
 src/server/libserver.a: src/server/CMakeFiles/server.dir/build.make
 src/server/libserver.a: src/server/CMakeFiles/server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libserver.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libserver.a"
 	cd /Users/romansulgan/repos/multithreading/out/Debug/src/server && $(CMAKE_COMMAND) -P CMakeFiles/server.dir/cmake_clean_target.cmake
 	cd /Users/romansulgan/repos/multithreading/out/Debug/src/server && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/server.dir/link.txt --verbose=$(VERBOSE)
 

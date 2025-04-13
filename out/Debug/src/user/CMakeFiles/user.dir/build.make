@@ -72,31 +72,63 @@ include src/user/CMakeFiles/user.dir/flags.make
 src/user/CMakeFiles/user.dir/codegen:
 .PHONY : src/user/CMakeFiles/user.dir/codegen
 
-src/user/CMakeFiles/user.dir/User.cpp.o: src/user/CMakeFiles/user.dir/flags.make
-src/user/CMakeFiles/user.dir/User.cpp.o: /Users/romansulgan/repos/multithreading/src/user/User.cpp
-src/user/CMakeFiles/user.dir/User.cpp.o: src/user/CMakeFiles/user.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/user/CMakeFiles/user.dir/User.cpp.o"
-	cd /Users/romansulgan/repos/multithreading/out/Debug/src/user && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/user/CMakeFiles/user.dir/User.cpp.o -MF CMakeFiles/user.dir/User.cpp.o.d -o CMakeFiles/user.dir/User.cpp.o -c /Users/romansulgan/repos/multithreading/src/user/User.cpp
+src/user/CMakeFiles/user.dir/impls/IUser.cpp.o: src/user/CMakeFiles/user.dir/flags.make
+src/user/CMakeFiles/user.dir/impls/IUser.cpp.o: /Users/romansulgan/repos/multithreading/src/user/impls/IUser.cpp
+src/user/CMakeFiles/user.dir/impls/IUser.cpp.o: src/user/CMakeFiles/user.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/user/CMakeFiles/user.dir/impls/IUser.cpp.o"
+	cd /Users/romansulgan/repos/multithreading/out/Debug/src/user && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/user/CMakeFiles/user.dir/impls/IUser.cpp.o -MF CMakeFiles/user.dir/impls/IUser.cpp.o.d -o CMakeFiles/user.dir/impls/IUser.cpp.o -c /Users/romansulgan/repos/multithreading/src/user/impls/IUser.cpp
 
-src/user/CMakeFiles/user.dir/User.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/user.dir/User.cpp.i"
-	cd /Users/romansulgan/repos/multithreading/out/Debug/src/user && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/romansulgan/repos/multithreading/src/user/User.cpp > CMakeFiles/user.dir/User.cpp.i
+src/user/CMakeFiles/user.dir/impls/IUser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/user.dir/impls/IUser.cpp.i"
+	cd /Users/romansulgan/repos/multithreading/out/Debug/src/user && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/romansulgan/repos/multithreading/src/user/impls/IUser.cpp > CMakeFiles/user.dir/impls/IUser.cpp.i
 
-src/user/CMakeFiles/user.dir/User.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/user.dir/User.cpp.s"
-	cd /Users/romansulgan/repos/multithreading/out/Debug/src/user && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/romansulgan/repos/multithreading/src/user/User.cpp -o CMakeFiles/user.dir/User.cpp.s
+src/user/CMakeFiles/user.dir/impls/IUser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/user.dir/impls/IUser.cpp.s"
+	cd /Users/romansulgan/repos/multithreading/out/Debug/src/user && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/romansulgan/repos/multithreading/src/user/impls/IUser.cpp -o CMakeFiles/user.dir/impls/IUser.cpp.s
+
+src/user/CMakeFiles/user.dir/impls/TestUser.cpp.o: src/user/CMakeFiles/user.dir/flags.make
+src/user/CMakeFiles/user.dir/impls/TestUser.cpp.o: /Users/romansulgan/repos/multithreading/src/user/impls/TestUser.cpp
+src/user/CMakeFiles/user.dir/impls/TestUser.cpp.o: src/user/CMakeFiles/user.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/user/CMakeFiles/user.dir/impls/TestUser.cpp.o"
+	cd /Users/romansulgan/repos/multithreading/out/Debug/src/user && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/user/CMakeFiles/user.dir/impls/TestUser.cpp.o -MF CMakeFiles/user.dir/impls/TestUser.cpp.o.d -o CMakeFiles/user.dir/impls/TestUser.cpp.o -c /Users/romansulgan/repos/multithreading/src/user/impls/TestUser.cpp
+
+src/user/CMakeFiles/user.dir/impls/TestUser.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/user.dir/impls/TestUser.cpp.i"
+	cd /Users/romansulgan/repos/multithreading/out/Debug/src/user && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/romansulgan/repos/multithreading/src/user/impls/TestUser.cpp > CMakeFiles/user.dir/impls/TestUser.cpp.i
+
+src/user/CMakeFiles/user.dir/impls/TestUser.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/user.dir/impls/TestUser.cpp.s"
+	cd /Users/romansulgan/repos/multithreading/out/Debug/src/user && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/romansulgan/repos/multithreading/src/user/impls/TestUser.cpp -o CMakeFiles/user.dir/impls/TestUser.cpp.s
+
+src/user/CMakeFiles/user.dir/impls/User.cpp.o: src/user/CMakeFiles/user.dir/flags.make
+src/user/CMakeFiles/user.dir/impls/User.cpp.o: /Users/romansulgan/repos/multithreading/src/user/impls/User.cpp
+src/user/CMakeFiles/user.dir/impls/User.cpp.o: src/user/CMakeFiles/user.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/user/CMakeFiles/user.dir/impls/User.cpp.o"
+	cd /Users/romansulgan/repos/multithreading/out/Debug/src/user && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/user/CMakeFiles/user.dir/impls/User.cpp.o -MF CMakeFiles/user.dir/impls/User.cpp.o.d -o CMakeFiles/user.dir/impls/User.cpp.o -c /Users/romansulgan/repos/multithreading/src/user/impls/User.cpp
+
+src/user/CMakeFiles/user.dir/impls/User.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/user.dir/impls/User.cpp.i"
+	cd /Users/romansulgan/repos/multithreading/out/Debug/src/user && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/romansulgan/repos/multithreading/src/user/impls/User.cpp > CMakeFiles/user.dir/impls/User.cpp.i
+
+src/user/CMakeFiles/user.dir/impls/User.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/user.dir/impls/User.cpp.s"
+	cd /Users/romansulgan/repos/multithreading/out/Debug/src/user && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/romansulgan/repos/multithreading/src/user/impls/User.cpp -o CMakeFiles/user.dir/impls/User.cpp.s
 
 # Object files for target user
 user_OBJECTS = \
-"CMakeFiles/user.dir/User.cpp.o"
+"CMakeFiles/user.dir/impls/IUser.cpp.o" \
+"CMakeFiles/user.dir/impls/TestUser.cpp.o" \
+"CMakeFiles/user.dir/impls/User.cpp.o"
 
 # External object files for target user
 user_EXTERNAL_OBJECTS =
 
-src/user/libuser.a: src/user/CMakeFiles/user.dir/User.cpp.o
+src/user/libuser.a: src/user/CMakeFiles/user.dir/impls/IUser.cpp.o
+src/user/libuser.a: src/user/CMakeFiles/user.dir/impls/TestUser.cpp.o
+src/user/libuser.a: src/user/CMakeFiles/user.dir/impls/User.cpp.o
 src/user/libuser.a: src/user/CMakeFiles/user.dir/build.make
 src/user/libuser.a: src/user/CMakeFiles/user.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libuser.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX static library libuser.a"
 	cd /Users/romansulgan/repos/multithreading/out/Debug/src/user && $(CMAKE_COMMAND) -P CMakeFiles/user.dir/cmake_clean_target.cmake
 	cd /Users/romansulgan/repos/multithreading/out/Debug/src/user && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/user.dir/link.txt --verbose=$(VERBOSE)
 

@@ -1,4 +1,4 @@
-file(GLOB SERVER_LIB "*.cpp")
+file(GLOB_RECURSE SERVER_LIB "*.cpp")
 add_library(server ${SERVER_LIB})
 
 target_link_libraries(server except user)

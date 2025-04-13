@@ -3,7 +3,8 @@
 #include <exception>
 #include <string>
 
-class UsernameException : public std::exception {
+class UsernameException
+    : public std::exception { // TODO: decorator template maybe used by this
 public:
   UsernameException(std::string wrongName, std::string expectedName, size_t id)
       : _wrongName(wrongName), _expectedName(expectedName), _id(id) {

@@ -1,24 +1,17 @@
 #pragma once
 
+#include "IUser.h"
 #include <atomic>
-#include <string>
-class User {
+
+class User : public IUser {
 public:
   User();
-  User(std::string name);
+  User(const std::string &);
   User(User &&);
   User(const User &);
   User &operator=(User &&);
   User &operator=(const User &);
-  ~User();
-
-public:
-  size_t getId() const;
-  std::string getName() const;
 
 private:
   static std::atomic<size_t> userId;
-
-  size_t _id;
-  std::string _name;
 };

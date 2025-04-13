@@ -957,8 +957,24 @@ CMakeFiles/project.dir/src/main.cpp.o: /Users/romansulgan/repos/multithreading/s
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/limits.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdarg.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stddef.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdint.h
+  /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdint.h \
+  /Users/romansulgan/repos/multithreading/src/server/IServer.h \
+  /Users/romansulgan/repos/multithreading/src/server/Server.h \
+  /Users/romansulgan/repos/multithreading/src/server/TestServer.h \
+  /Users/romansulgan/repos/multithreading/src/user/IUser.h \
+  /Users/romansulgan/repos/multithreading/src/user/TestUser.h \
+  /Users/romansulgan/repos/multithreading/src/user/User.h
 
+
+/Users/romansulgan/repos/multithreading/src/user/User.h:
+
+/Users/romansulgan/repos/multithreading/src/user/TestUser.h:
+
+/Users/romansulgan/repos/multithreading/src/user/IUser.h:
+
+/Users/romansulgan/repos/multithreading/src/server/TestServer.h:
+
+/Users/romansulgan/repos/multithreading/src/server/IServer.h:
 
 /Library/Developer/CommandLineTools/usr/lib/clang/16/include/stdint.h:
 
@@ -1919,6 +1935,8 @@ CMakeFiles/project.dir/src/main.cpp.o: /Users/romansulgan/repos/multithreading/s
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__format/formatter_floating_point.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__functional/bind_front.h:
+
+/Users/romansulgan/repos/multithreading/src/server/Server.h:
 
 /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/c++/v1/__format/format_parse_context.h:
 

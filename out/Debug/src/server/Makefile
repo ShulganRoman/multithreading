@@ -185,53 +185,77 @@ server/fast:
 	cd /Users/romansulgan/repos/multithreading/out/Debug && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/server.dir/build.make src/server/CMakeFiles/server.dir/build
 .PHONY : server/fast
 
-Server.o: Server.cpp.o
-.PHONY : Server.o
+funcs_impl/IServer.o: funcs_impl/IServer.cpp.o
+.PHONY : funcs_impl/IServer.o
 
 # target to build an object file
-Server.cpp.o:
-	cd /Users/romansulgan/repos/multithreading/out/Debug && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/server.dir/build.make src/server/CMakeFiles/server.dir/Server.cpp.o
-.PHONY : Server.cpp.o
+funcs_impl/IServer.cpp.o:
+	cd /Users/romansulgan/repos/multithreading/out/Debug && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/server.dir/build.make src/server/CMakeFiles/server.dir/funcs_impl/IServer.cpp.o
+.PHONY : funcs_impl/IServer.cpp.o
 
-Server.i: Server.cpp.i
-.PHONY : Server.i
+funcs_impl/IServer.i: funcs_impl/IServer.cpp.i
+.PHONY : funcs_impl/IServer.i
 
 # target to preprocess a source file
-Server.cpp.i:
-	cd /Users/romansulgan/repos/multithreading/out/Debug && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/server.dir/build.make src/server/CMakeFiles/server.dir/Server.cpp.i
-.PHONY : Server.cpp.i
+funcs_impl/IServer.cpp.i:
+	cd /Users/romansulgan/repos/multithreading/out/Debug && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/server.dir/build.make src/server/CMakeFiles/server.dir/funcs_impl/IServer.cpp.i
+.PHONY : funcs_impl/IServer.cpp.i
 
-Server.s: Server.cpp.s
-.PHONY : Server.s
+funcs_impl/IServer.s: funcs_impl/IServer.cpp.s
+.PHONY : funcs_impl/IServer.s
 
 # target to generate assembly for a file
-Server.cpp.s:
-	cd /Users/romansulgan/repos/multithreading/out/Debug && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/server.dir/build.make src/server/CMakeFiles/server.dir/Server.cpp.s
-.PHONY : Server.cpp.s
+funcs_impl/IServer.cpp.s:
+	cd /Users/romansulgan/repos/multithreading/out/Debug && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/server.dir/build.make src/server/CMakeFiles/server.dir/funcs_impl/IServer.cpp.s
+.PHONY : funcs_impl/IServer.cpp.s
 
-TestServer.o: TestServer.cpp.o
-.PHONY : TestServer.o
+funcs_impl/Server.o: funcs_impl/Server.cpp.o
+.PHONY : funcs_impl/Server.o
 
 # target to build an object file
-TestServer.cpp.o:
-	cd /Users/romansulgan/repos/multithreading/out/Debug && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/server.dir/build.make src/server/CMakeFiles/server.dir/TestServer.cpp.o
-.PHONY : TestServer.cpp.o
+funcs_impl/Server.cpp.o:
+	cd /Users/romansulgan/repos/multithreading/out/Debug && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/server.dir/build.make src/server/CMakeFiles/server.dir/funcs_impl/Server.cpp.o
+.PHONY : funcs_impl/Server.cpp.o
 
-TestServer.i: TestServer.cpp.i
-.PHONY : TestServer.i
+funcs_impl/Server.i: funcs_impl/Server.cpp.i
+.PHONY : funcs_impl/Server.i
 
 # target to preprocess a source file
-TestServer.cpp.i:
-	cd /Users/romansulgan/repos/multithreading/out/Debug && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/server.dir/build.make src/server/CMakeFiles/server.dir/TestServer.cpp.i
-.PHONY : TestServer.cpp.i
+funcs_impl/Server.cpp.i:
+	cd /Users/romansulgan/repos/multithreading/out/Debug && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/server.dir/build.make src/server/CMakeFiles/server.dir/funcs_impl/Server.cpp.i
+.PHONY : funcs_impl/Server.cpp.i
 
-TestServer.s: TestServer.cpp.s
-.PHONY : TestServer.s
+funcs_impl/Server.s: funcs_impl/Server.cpp.s
+.PHONY : funcs_impl/Server.s
 
 # target to generate assembly for a file
-TestServer.cpp.s:
-	cd /Users/romansulgan/repos/multithreading/out/Debug && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/server.dir/build.make src/server/CMakeFiles/server.dir/TestServer.cpp.s
-.PHONY : TestServer.cpp.s
+funcs_impl/Server.cpp.s:
+	cd /Users/romansulgan/repos/multithreading/out/Debug && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/server.dir/build.make src/server/CMakeFiles/server.dir/funcs_impl/Server.cpp.s
+.PHONY : funcs_impl/Server.cpp.s
+
+funcs_impl/TestServer.o: funcs_impl/TestServer.cpp.o
+.PHONY : funcs_impl/TestServer.o
+
+# target to build an object file
+funcs_impl/TestServer.cpp.o:
+	cd /Users/romansulgan/repos/multithreading/out/Debug && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/server.dir/build.make src/server/CMakeFiles/server.dir/funcs_impl/TestServer.cpp.o
+.PHONY : funcs_impl/TestServer.cpp.o
+
+funcs_impl/TestServer.i: funcs_impl/TestServer.cpp.i
+.PHONY : funcs_impl/TestServer.i
+
+# target to preprocess a source file
+funcs_impl/TestServer.cpp.i:
+	cd /Users/romansulgan/repos/multithreading/out/Debug && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/server.dir/build.make src/server/CMakeFiles/server.dir/funcs_impl/TestServer.cpp.i
+.PHONY : funcs_impl/TestServer.cpp.i
+
+funcs_impl/TestServer.s: funcs_impl/TestServer.cpp.s
+.PHONY : funcs_impl/TestServer.s
+
+# target to generate assembly for a file
+funcs_impl/TestServer.cpp.s:
+	cd /Users/romansulgan/repos/multithreading/out/Debug && $(MAKE) $(MAKESILENT) -f src/server/CMakeFiles/server.dir/build.make src/server/CMakeFiles/server.dir/funcs_impl/TestServer.cpp.s
+.PHONY : funcs_impl/TestServer.cpp.s
 
 # Help Target
 help:
@@ -247,12 +271,15 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... server"
-	@echo "... Server.o"
-	@echo "... Server.i"
-	@echo "... Server.s"
-	@echo "... TestServer.o"
-	@echo "... TestServer.i"
-	@echo "... TestServer.s"
+	@echo "... funcs_impl/IServer.o"
+	@echo "... funcs_impl/IServer.i"
+	@echo "... funcs_impl/IServer.s"
+	@echo "... funcs_impl/Server.o"
+	@echo "... funcs_impl/Server.i"
+	@echo "... funcs_impl/Server.s"
+	@echo "... funcs_impl/TestServer.o"
+	@echo "... funcs_impl/TestServer.i"
+	@echo "... funcs_impl/TestServer.s"
 .PHONY : help
 
 

@@ -1,6 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/user.dir/User.cpp.o"
-  "CMakeFiles/user.dir/User.cpp.o.d"
+  "CMakeFiles/user.dir/impls/IUser.cpp.o"
+  "CMakeFiles/user.dir/impls/IUser.cpp.o.d"
+  "CMakeFiles/user.dir/impls/TestUser.cpp.o"
+  "CMakeFiles/user.dir/impls/TestUser.cpp.o.d"
+  "CMakeFiles/user.dir/impls/User.cpp.o"
+  "CMakeFiles/user.dir/impls/User.cpp.o.d"
   "libuser.a"
   "libuser.pdb"
 )

@@ -2,3 +2,5 @@
 .out/
 compile_commands.json
 .gitmodules
+*.o
+*.d

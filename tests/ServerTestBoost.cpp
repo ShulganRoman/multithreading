@@ -1,3 +1,4 @@
+#include "IUser.h"
 #include "InvalidDeleteUser.h"
 #include "TestServer.h"
 #include "TestUser.h"
@@ -5,18 +6,24 @@
 #include <gtest/gtest.h>
 #include <unordered_map>
 
-std::atomic<size_t> TestUser::userId{0};
-
 class ServerTestingClass : public ::testing::Test {
 protected:
   void SetUp() override {
-    server.create_user("Roman");
-    server.create_user("Danil");
-    server.create_user("Lubov");
-    server.create_user("Vasiliy");
-    server.create_user("Polina");
-    server.create_user("Alice");
-    server.create_user("Bob");
+    TestUser roman("Roman");
+    TestUser danil("Danil");
+    TestUser lubov("Lubov");
+    TestUser vasiliy("Vasiliy");
+    TestUser polina("Polina");
+    TestUser alice("Alice");
+    TestUser bob("Bob");
+
+    server.create_user(roman);
+    server.create_user(danil);
+    server.create_user(lubov);
+    server.create_user(vasiliy);
+    server.create_user(polina);
+    server.create_user(alice);
+    server.create_user(bob);
 
     list = server.get_users();
   }
@@ -24,7 +31,7 @@ protected:
   void TearDown() override { server.reset(); }
 
   TestServer server;
-  const std::unordered_map<size_t, TestUser> *list;
+  const std::unordered_map<size_t, IUser> *list;
 };
 
 TEST_F(ServerTestingClass, Addition) {
@@ -84,7 +91,8 @@ TEST_F(ServerTestingClass, reindexingUser) {
 
   EXPECT_TRUE(list->find(bobId) == list->end());
 
-  server.create_user("Bob");
+  TestUser bob("bob");
+  server.create_user(bob);
 
   int newBobId = -1;
 
