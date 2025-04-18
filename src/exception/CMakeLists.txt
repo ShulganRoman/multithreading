@@ -1,2 +1,2 @@
-add_library(except INTERFACE)
-target_include_directories(except INTERFACE ${CMAKE_CURRENT_SOURCE_DIR})
+add_library(exception INTERFACE)
+target_include_directories(exception INTERFACE ${CMAKE_CURRENT_SOURCE_DIR})

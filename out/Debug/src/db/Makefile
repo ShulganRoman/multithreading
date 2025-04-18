@@ -171,44 +171,6 @@ depend:
 	cd /Users/romansulgan/repos/multithreading/out/Debug && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-# Convenience name for target.
-src/db/CMakeFiles/db.dir/rule:
-	cd /Users/romansulgan/repos/multithreading/out/Debug && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/db/CMakeFiles/db.dir/rule
-.PHONY : src/db/CMakeFiles/db.dir/rule
-
-# Convenience name for target.
-db: src/db/CMakeFiles/db.dir/rule
-.PHONY : db
-
-# fast build rule for target.
-db/fast:
-	cd /Users/romansulgan/repos/multithreading/out/Debug && $(MAKE) $(MAKESILENT) -f src/db/CMakeFiles/db.dir/build.make src/db/CMakeFiles/db.dir/build
-.PHONY : db/fast
-
-Database.o: Database.cpp.o
-.PHONY : Database.o
-
-# target to build an object file
-Database.cpp.o:
-	cd /Users/romansulgan/repos/multithreading/out/Debug && $(MAKE) $(MAKESILENT) -f src/db/CMakeFiles/db.dir/build.make src/db/CMakeFiles/db.dir/Database.cpp.o
-.PHONY : Database.cpp.o
-
-Database.i: Database.cpp.i
-.PHONY : Database.i
-
-# target to preprocess a source file
-Database.cpp.i:
-	cd /Users/romansulgan/repos/multithreading/out/Debug && $(MAKE) $(MAKESILENT) -f src/db/CMakeFiles/db.dir/build.make src/db/CMakeFiles/db.dir/Database.cpp.i
-.PHONY : Database.cpp.i
-
-Database.s: Database.cpp.s
-.PHONY : Database.s
-
-# target to generate assembly for a file
-Database.cpp.s:
-	cd /Users/romansulgan/repos/multithreading/out/Debug && $(MAKE) $(MAKESILENT) -f src/db/CMakeFiles/db.dir/build.make src/db/CMakeFiles/db.dir/Database.cpp.s
-.PHONY : Database.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -223,9 +185,6 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... db"
-	@echo "... Database.o"
-	@echo "... Database.i"
-	@echo "... Database.s"
 .PHONY : help
 
 

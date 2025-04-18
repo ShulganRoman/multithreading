@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/romansulgan/repos/multithreading/tests/DatabaseTest.cpp" "CMakeFiles/projectTests.dir/tests/DatabaseTest.cpp.o" "gcc" "CMakeFiles/projectTests.dir/tests/DatabaseTest.cpp.o.d"
   "/Users/romansulgan/repos/multithreading/tests/ServerTestBoost.cpp" "CMakeFiles/projectTests.dir/tests/ServerTestBoost.cpp.o" "gcc" "CMakeFiles/projectTests.dir/tests/ServerTestBoost.cpp.o.d"
   )
 

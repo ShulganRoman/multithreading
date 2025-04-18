@@ -1,28 +1,59 @@
-#include "requests/Request.h"
-#include <functional>
+#include "requests/IRequest.h"
+#include <memory>
 #include <pqxx/pqxx>
 #include <string>
-#include <vector>
 
-class Database { // TODO: Доделать автоматизацию типов (id, name)
+using namespace pqxx;
+using namespace std;
+
+class Database {
 public:
-  Database(std::string connectionString) // TODO: implement try catch
-      : _connectionString(connectionString) {}
+  explicit Database(std::string cxStr)
+      : _cxStr(std::move(cxStr)), // ① сохраняем **копию** в член‑данном
+        _cx{pqxx::zview(_cxStr)}, // ② инициализируем connection ЕЁ данными
+        _tx{std::make_unique<pqxx::work>(_cx)} {}
 
-  ~Database() = default;
-
-  void setRequest(Request &request) { _query.push_back(request); }
-
-  void startQuery() {
-    for (auto i : _query)
-      i.get().exec(pqxx::work(_connection));
-  }
+  // правило пяти: запрещаем копирование, разрешаем перемещение
+  Database(const Database &) = delete;
+  Database &operator=(const Database &) = delete;
+  Database(Database &&) = default;
+  Database &operator=(Database &&) = default;
 
   void clearQuery() { _query.clear(); }
+  void commit() { _tx->commit(); }
+  void abort() {
+    _tx.reset();
+
+    {
+      pqxx::work tx{_cx};
+      tx.exec(IRequest::restartId());
+      tx.commit();
+    }
+
+    _tx = std::make_unique<pqxx::work>(_cx);
+    _query.clear();
+  }
+
+  void push_request(std::unique_ptr<IRequest> req) {
+    _query.push_back(std::move(req));
+  }
+  void execQuery() {
+    for (auto &r : _query)
+      _tx->exec(r->buildRequest());
+  }
+  void execAndClear() {
+    execQuery();
+    clearQuery();
+  }
+
+  pqxx::work &tx() { return *_tx; } // удобный alias
+  const std::string &connStr() const { return _cxStr; }
 
 private:
-  pqxx::connection _connection;
-  std::vector<std::reference_wrapper<Request>> _query;
-
-  std::string _connectionString;
-}; // TODO: Перенести все в Database.cpp
+  std::string _cxStr;   // строка живёт столько же, сколько Database
+  pqxx::connection _cx; // держит zview на _cxStr
+  std::unique_ptr<pqxx::work> _tx;
+  std::vector<std::unique_ptr<IRequest>> _query;
+};
+// TODO: Перенести все в Database.cpp
+// сообщение в базу данных и из нее

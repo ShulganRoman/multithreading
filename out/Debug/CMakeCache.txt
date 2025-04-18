@@ -388,7 +388,7 @@ gtest_force_shared_crt:BOOL=OFF
 gtest_hide_internal_symbols:BOOL=OFF
 
 //Path to a library.
-pkgcfg_lib_PQXX_pqxx:FILEPATH=/opt/homebrew/Cellar/libpqxx/7.10.0/lib/libpqxx.dylib
+pkgcfg_lib_PQXX_pqxx:FILEPATH=/opt/homebrew/lib/libpqxx.dylib
 
 //Value Computed by CMake
 project_BINARY_DIR:STATIC=/Users/romansulgan/repos/multithreading/out/Debug
@@ -400,7 +400,7 @@ project_IS_TOP_LEVEL:STATIC=ON
 project_SOURCE_DIR:STATIC=/Users/romansulgan/repos/multithreading
 
 //Dependencies for the target
-server_LIB_DEPENDS:STATIC=general;user;
+server_LIB_DEPENDS:STATIC=general;user;general;chat;
 
 
 ########################
@@ -535,7 +535,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=9
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -608,37 +608,37 @@ MEMORYCHECK_SUPPRESSIONS_FILE-ADVANCED:INTERNAL=1
 PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
 PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
-PQXX_CFLAGS:INTERNAL=-I/opt/homebrew/Cellar/libpqxx/7.10.0/include
+PQXX_CFLAGS:INTERNAL=-I/usr/local/include
 PQXX_CFLAGS_I:INTERNAL=
 PQXX_CFLAGS_OTHER:INTERNAL=
 PQXX_FOUND:INTERNAL=1
-PQXX_INCLUDEDIR:INTERNAL=/opt/homebrew/Cellar/libpqxx/7.10.0/include
-PQXX_INCLUDE_DIRS:INTERNAL=/opt/homebrew/Cellar/libpqxx/7.10.0/include
-PQXX_LDFLAGS:INTERNAL=-L/opt/homebrew/Cellar/libpqxx/7.10.0/lib;-lpqxx
+PQXX_INCLUDEDIR:INTERNAL=/usr/local/include
+PQXX_INCLUDE_DIRS:INTERNAL=/usr/local/include
+PQXX_LDFLAGS:INTERNAL=-L/usr/local/lib;-lpqxx
 PQXX_LDFLAGS_OTHER:INTERNAL=
-PQXX_LIBDIR:INTERNAL=/opt/homebrew/Cellar/libpqxx/7.10.0/lib
+PQXX_LIBDIR:INTERNAL=/usr/local/lib
 PQXX_LIBRARIES:INTERNAL=pqxx
-PQXX_LIBRARY_DIRS:INTERNAL=/opt/homebrew/Cellar/libpqxx/7.10.0/lib
+PQXX_LIBRARY_DIRS:INTERNAL=/usr/local/lib
 PQXX_LIBS:INTERNAL=
 PQXX_LIBS_L:INTERNAL=
 PQXX_LIBS_OTHER:INTERNAL=
 PQXX_LIBS_PATHS:INTERNAL=
 PQXX_MODULE_NAME:INTERNAL=libpqxx
-PQXX_PREFIX:INTERNAL=/opt/homebrew/Cellar/libpqxx/7.10.0
-PQXX_STATIC_CFLAGS:INTERNAL=-I/opt/homebrew/Cellar/libpqxx/7.10.0/include
+PQXX_PREFIX:INTERNAL=/usr/local
+PQXX_STATIC_CFLAGS:INTERNAL=-I/usr/local/include
 PQXX_STATIC_CFLAGS_I:INTERNAL=
 PQXX_STATIC_CFLAGS_OTHER:INTERNAL=
-PQXX_STATIC_INCLUDE_DIRS:INTERNAL=/opt/homebrew/Cellar/libpqxx/7.10.0/include
-PQXX_STATIC_LDFLAGS:INTERNAL=-L/opt/homebrew/Cellar/libpqxx/7.10.0/lib;-lpqxx
+PQXX_STATIC_INCLUDE_DIRS:INTERNAL=/usr/local/include
+PQXX_STATIC_LDFLAGS:INTERNAL=-L/usr/local/lib;-lpqxx
 PQXX_STATIC_LDFLAGS_OTHER:INTERNAL=
 PQXX_STATIC_LIBDIR:INTERNAL=
 PQXX_STATIC_LIBRARIES:INTERNAL=pqxx
-PQXX_STATIC_LIBRARY_DIRS:INTERNAL=/opt/homebrew/Cellar/libpqxx/7.10.0/lib
+PQXX_STATIC_LIBRARY_DIRS:INTERNAL=/usr/local/lib
 PQXX_STATIC_LIBS:INTERNAL=
 PQXX_STATIC_LIBS_L:INTERNAL=
 PQXX_STATIC_LIBS_OTHER:INTERNAL=
 PQXX_STATIC_LIBS_PATHS:INTERNAL=
-PQXX_VERSION:INTERNAL=7.10.0
+PQXX_VERSION:INTERNAL=7.10.2
 PQXX_libpqxx_INCLUDEDIR:INTERNAL=
 PQXX_libpqxx_LIBDIR:INTERNAL=
 PQXX_libpqxx_PREFIX:INTERNAL=
@@ -669,6 +669,6 @@ gtest_force_shared_crt-ADVANCED:INTERNAL=1
 gtest_hide_internal_symbols-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: pkgcfg_lib_PQXX_pqxx
 pkgcfg_lib_PQXX_pqxx-ADVANCED:INTERNAL=1
-prefix_result:INTERNAL=/opt/homebrew/Cellar/libpqxx/7.10.0/lib
+prefix_result:INTERNAL=/usr/local/lib
 targets_export_name:INTERNAL=GTestTargets
 

@@ -562,19 +562,6 @@ projectTests/fast:
 .PHONY : projectTests/fast
 
 #=============================================================================
-# Target rules for targets named db
-
-# Build rule for target.
-db: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 db
-.PHONY : db
-
-# fast build rule for target.
-db/fast:
-	$(MAKE) $(MAKESILENT) -f src/db/CMakeFiles/db.dir/build.make src/db/CMakeFiles/db.dir/build
-.PHONY : db/fast
-
-#=============================================================================
 # Target rules for targets named user
 
 # Build rule for target.
@@ -586,6 +573,32 @@ user: cmake_check_build_system
 user/fast:
 	$(MAKE) $(MAKESILENT) -f src/user/CMakeFiles/user.dir/build.make src/user/CMakeFiles/user.dir/build
 .PHONY : user/fast
+
+#=============================================================================
+# Target rules for targets named chat
+
+# Build rule for target.
+chat: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 chat
+.PHONY : chat
+
+# fast build rule for target.
+chat/fast:
+	$(MAKE) $(MAKESILENT) -f src/chat/CMakeFiles/chat.dir/build.make src/chat/CMakeFiles/chat.dir/build
+.PHONY : chat/fast
+
+#=============================================================================
+# Target rules for targets named db
+
+# Build rule for target.
+db: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 db
+.PHONY : db
+
+# fast build rule for target.
+db/fast:
+	$(MAKE) $(MAKESILENT) -f src/db/CMakeFiles/db.dir/build.make src/db/CMakeFiles/db.dir/build
+.PHONY : db/fast
 
 #=============================================================================
 # Target rules for targets named server
@@ -676,6 +689,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project.dir/build.make CMakeFiles/project.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+tests/DatabaseTest.o: tests/DatabaseTest.cpp.o
+.PHONY : tests/DatabaseTest.o
+
+# target to build an object file
+tests/DatabaseTest.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projectTests.dir/build.make CMakeFiles/projectTests.dir/tests/DatabaseTest.cpp.o
+.PHONY : tests/DatabaseTest.cpp.o
+
+tests/DatabaseTest.i: tests/DatabaseTest.cpp.i
+.PHONY : tests/DatabaseTest.i
+
+# target to preprocess a source file
+tests/DatabaseTest.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projectTests.dir/build.make CMakeFiles/projectTests.dir/tests/DatabaseTest.cpp.i
+.PHONY : tests/DatabaseTest.cpp.i
+
+tests/DatabaseTest.s: tests/DatabaseTest.cpp.s
+.PHONY : tests/DatabaseTest.s
+
+# target to generate assembly for a file
+tests/DatabaseTest.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/projectTests.dir/build.make CMakeFiles/projectTests.dir/tests/DatabaseTest.cpp.s
+.PHONY : tests/DatabaseTest.cpp.s
+
 tests/ServerTestBoost.o: tests/ServerTestBoost.cpp.o
 .PHONY : tests/ServerTestBoost.o
 
@@ -741,6 +778,7 @@ help:
 	@echo "... NightlySubmit"
 	@echo "... NightlyTest"
 	@echo "... NightlyUpdate"
+	@echo "... chat"
 	@echo "... db"
 	@echo "... gmock"
 	@echo "... gmock_main"
@@ -753,6 +791,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... tests/DatabaseTest.o"
+	@echo "... tests/DatabaseTest.i"
+	@echo "... tests/DatabaseTest.s"
 	@echo "... tests/ServerTestBoost.o"
 	@echo "... tests/ServerTestBoost.i"
 	@echo "... tests/ServerTestBoost.s"

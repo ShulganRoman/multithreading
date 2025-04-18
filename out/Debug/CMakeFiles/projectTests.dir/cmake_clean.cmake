@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/projectTests.dir/tests/DatabaseTest.cpp.o"
+  "CMakeFiles/projectTests.dir/tests/DatabaseTest.cpp.o.d"
   "CMakeFiles/projectTests.dir/tests/ServerTestBoost.cpp.o"
   "CMakeFiles/projectTests.dir/tests/ServerTestBoost.cpp.o.d"
   "projectTests"

@@ -95,10 +95,12 @@ project_EXTERNAL_OBJECTS =
 
 project: CMakeFiles/project.dir/src/main.cpp.o
 project: CMakeFiles/project.dir/build.make
-project: src/server/libserver.a
 project: src/user/libuser.a
-project: src/db/libdb.a
+project: src/chat/libchat.a
+project: src/server/libserver.a
 project: /opt/homebrew/lib/libboost_system.dylib
+project: src/user/libuser.a
+project: src/chat/libchat.a
 project: CMakeFiles/project.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable project"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/project.dir/link.txt --verbose=$(VERBOSE)

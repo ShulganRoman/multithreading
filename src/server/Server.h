@@ -5,11 +5,13 @@
 class Server : public IServer {
 private:
   static Server *_instance;
-  Server() = default;
+  Server()
+      : _database("dbname=multithreading user=romansulgan "
+                  "password='[jxe,snmvjkjlsv' host=localhost") {}
 
 public:
   static Server *getInstance();
 
 private:
-  // static std::atomic<unsigned long> _chatId; // TODO: move _userId
+  Database _database;
 };

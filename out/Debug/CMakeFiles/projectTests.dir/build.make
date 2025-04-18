@@ -72,10 +72,24 @@ include CMakeFiles/projectTests.dir/flags.make
 CMakeFiles/projectTests.dir/codegen:
 .PHONY : CMakeFiles/projectTests.dir/codegen
 
+CMakeFiles/projectTests.dir/tests/DatabaseTest.cpp.o: CMakeFiles/projectTests.dir/flags.make
+CMakeFiles/projectTests.dir/tests/DatabaseTest.cpp.o: /Users/romansulgan/repos/multithreading/tests/DatabaseTest.cpp
+CMakeFiles/projectTests.dir/tests/DatabaseTest.cpp.o: CMakeFiles/projectTests.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/projectTests.dir/tests/DatabaseTest.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/projectTests.dir/tests/DatabaseTest.cpp.o -MF CMakeFiles/projectTests.dir/tests/DatabaseTest.cpp.o.d -o CMakeFiles/projectTests.dir/tests/DatabaseTest.cpp.o -c /Users/romansulgan/repos/multithreading/tests/DatabaseTest.cpp
+
+CMakeFiles/projectTests.dir/tests/DatabaseTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/projectTests.dir/tests/DatabaseTest.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/romansulgan/repos/multithreading/tests/DatabaseTest.cpp > CMakeFiles/projectTests.dir/tests/DatabaseTest.cpp.i
+
+CMakeFiles/projectTests.dir/tests/DatabaseTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/projectTests.dir/tests/DatabaseTest.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/romansulgan/repos/multithreading/tests/DatabaseTest.cpp -o CMakeFiles/projectTests.dir/tests/DatabaseTest.cpp.s
+
 CMakeFiles/projectTests.dir/tests/ServerTestBoost.cpp.o: CMakeFiles/projectTests.dir/flags.make
 CMakeFiles/projectTests.dir/tests/ServerTestBoost.cpp.o: /Users/romansulgan/repos/multithreading/tests/ServerTestBoost.cpp
 CMakeFiles/projectTests.dir/tests/ServerTestBoost.cpp.o: CMakeFiles/projectTests.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/projectTests.dir/tests/ServerTestBoost.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/projectTests.dir/tests/ServerTestBoost.cpp.o"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/projectTests.dir/tests/ServerTestBoost.cpp.o -MF CMakeFiles/projectTests.dir/tests/ServerTestBoost.cpp.o.d -o CMakeFiles/projectTests.dir/tests/ServerTestBoost.cpp.o -c /Users/romansulgan/repos/multithreading/tests/ServerTestBoost.cpp
 
 CMakeFiles/projectTests.dir/tests/ServerTestBoost.cpp.i: cmake_force
@@ -88,21 +102,25 @@ CMakeFiles/projectTests.dir/tests/ServerTestBoost.cpp.s: cmake_force
 
 # Object files for target projectTests
 projectTests_OBJECTS = \
+"CMakeFiles/projectTests.dir/tests/DatabaseTest.cpp.o" \
 "CMakeFiles/projectTests.dir/tests/ServerTestBoost.cpp.o"
 
 # External object files for target projectTests
 projectTests_EXTERNAL_OBJECTS =
 
+projectTests: CMakeFiles/projectTests.dir/tests/DatabaseTest.cpp.o
 projectTests: CMakeFiles/projectTests.dir/tests/ServerTestBoost.cpp.o
 projectTests: CMakeFiles/projectTests.dir/build.make
-projectTests: src/server/libserver.a
 projectTests: src/user/libuser.a
-projectTests: src/db/libdb.a
+projectTests: src/chat/libchat.a
+projectTests: src/server/libserver.a
 projectTests: /opt/homebrew/lib/libboost_system.dylib
 projectTests: lib/libgtest_main.a
+projectTests: src/user/libuser.a
+projectTests: src/chat/libchat.a
 projectTests: lib/libgtest.a
 projectTests: CMakeFiles/projectTests.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable projectTests"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/romansulgan/repos/multithreading/out/Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable projectTests"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/projectTests.dir/link.txt --verbose=$(VERBOSE)
 	/opt/homebrew/bin/cmake -D TEST_TARGET=projectTests -D TEST_EXECUTABLE=/Users/romansulgan/repos/multithreading/out/Debug/projectTests -D TEST_EXECUTOR= -D TEST_WORKING_DIR=/Users/romansulgan/repos/multithreading/out/Debug -D TEST_EXTRA_ARGS= -D TEST_PROPERTIES= -D TEST_PREFIX= -D TEST_SUFFIX= -D TEST_FILTER= -D NO_PRETTY_TYPES=FALSE -D NO_PRETTY_VALUES=FALSE -D TEST_LIST=projectTests_TESTS -D CTEST_FILE=/Users/romansulgan/repos/multithreading/out/Debug/projectTests[1]_tests.cmake -D TEST_DISCOVERY_TIMEOUT=5 -D TEST_DISCOVERY_EXTRA_ARGS= -D TEST_XML_OUTPUT_DIR= -P /opt/homebrew/share/cmake/Modules/GoogleTestAddTests.cmake
 

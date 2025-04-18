@@ -4,7 +4,7 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -isystem /opt/homebrew/include -isystem /opt/homebrew/Cellar/libpqxx/7.10.0/include -isystem /Users/romansulgan/repos/multithreading/external/googlemock/include -isystem /Users/romansulgan/repos/multithreading/external/googlemock -isystem /Users/romansulgan/repos/multithreading/external/googletest/include -isystem /Users/romansulgan/repos/multithreading/external/googletest
+CXX_INCLUDES = -isystem /opt/homebrew/include -isystem /usr/local/include -isystem /Users/romansulgan/repos/multithreading/external/googlemock/include -isystem /Users/romansulgan/repos/multithreading/external/googlemock -isystem /Users/romansulgan/repos/multithreading/external/googletest/include -isystem /Users/romansulgan/repos/multithreading/external/googletest
 
 CXX_FLAGSarm64 = -g -std=c++20 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk  -DGTEST_HAS_PTHREAD=1  
 
