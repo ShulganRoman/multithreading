@@ -1,31 +1,30 @@
-#include "User.h"
-#include <atomic>
+#include "Chat.h"
 
-std::atomic<size_t> User::userId = {0};
+std::atomic<size_t> Chat::chatId = {0};
 
-User::User(const std::string &name) {
+Chat::Chat(const std::string &name) {
   _name = name;
-  _id = ++userId;
+  _id = ++chatId;
 }
 
-User::User(User &&other) {
+Chat::Chat(Chat &&other) {
   _name = std::move(other._name);
   _id = other._id;
 }
 
-User::User(const User &other) {
+Chat::Chat(const Chat &other) {
   _name = other._name;
   _id = other._id;
 }
 
-User &User::operator=(User &&other) {
+Chat &Chat::operator=(Chat &&other) {
   _name = std::move(other._name);
   _id = other._id;
 
   return *this;
 }
 
-User &User::operator=(const User &other) {
+Chat &Chat::operator=(const Chat &other) {
   if (&other == this)
     return *this;
 

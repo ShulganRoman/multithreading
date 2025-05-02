@@ -1,7 +1,8 @@
 #pragma once
 
+#include "Database.h"
+#include "IChat.h"
 #include "IUser.h"
-#include <string>
 #include <unordered_map>
 
 class IServer {
@@ -9,9 +10,14 @@ public:
   virtual ~IServer() = default;
 
   void create_user(IUser &user);
-  void delete_user(std::string name, size_t id);
+  void delete_user(size_t id);
 
-  const std::unordered_map<size_t, IUser> *get_users();
+  void create_chat(IChat &chat);
+  void delete_chat(size_t id);
+
+  // void insert_user_into_chat(IUser &user, IChat &chat);
+
+  const std::unordered_map<size_t, IUser> &get_users() const;
 
 protected:
   std::unordered_map<size_t, IUser> _users;
