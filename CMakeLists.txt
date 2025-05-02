@@ -3,7 +3,7 @@ cmake_policy(SET CMP0167 NEW)
 project(project)
 set(CMAKE_CXX_STANDARD 20)
 
-find_package(Boost REQUIRED COMPONENTS system)
+find_package(Boost REQUIRED COMPONENTS system thread)
 include_directories(${Boost_INCLUDE_DIRS})
 
 find_package(PkgConfig REQUIRED)
@@ -12,12 +12,12 @@ include_directories(${PQXX_INCLUDE_DIRS})
 link_directories(${PQXX_LIBRARY_DIRS})
 
 add_subdirectory(src/exception)
+add_subdirectory(src/net)
 add_subdirectory(src/user)
 add_subdirectory(src/chat)
 add_subdirectory(src/db)
 add_subdirectory(src/server)
-
-set(MAIN_SOURCE exception user chat db server ${Boost_LIBRARIES} ${PQXX_LIBRARIES})
+set(MAIN_SOURCE server ${Boost_LIBRARIES} ${PQXX_LIBRARIES})
 
 add_executable(project src/main.cpp)
 target_link_libraries(project PRIVATE ${MAIN_SOURCE})

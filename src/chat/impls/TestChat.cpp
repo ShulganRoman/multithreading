@@ -3,8 +3,6 @@
 
 std::atomic<size_t> TestChat::chatId{0};
 
-TestChat::TestChat() = default;
-
 TestChat::TestChat(const std::string &name) {
   _name = name;
   _id = ++chatId;

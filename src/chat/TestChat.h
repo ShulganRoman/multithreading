@@ -6,7 +6,7 @@
 
 class TestChat : public IChat {
 public:
-  TestChat();
+  TestChat() = delete;
   TestChat(const std::string &name);
   TestChat(TestChat &&);
   TestChat(const TestChat &);

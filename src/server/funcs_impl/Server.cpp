@@ -1,11 +1,9 @@
 #include "Server.h"
 #include <cstddef>
+#include <string>
 
-Server *Server::_instance = nullptr;
-
-Server *Server::getInstance() {
-  if (!_instance)
-    return new Server();
-
-  return _instance;
+std::unique_ptr<Server> Server::create(boost::asio::io_context &io,
+                                       const std::string &db_conn,
+                                       uint16_t port) {
+  return std::unique_ptr<Server>(new Server(io, db_conn, port));
 }

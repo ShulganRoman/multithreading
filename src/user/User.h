@@ -5,7 +5,7 @@
 
 class User : public IUser {
 public:
-  User();
+  User() = delete;
   User(const std::string &);
   User(User &&);
   User(const User &);

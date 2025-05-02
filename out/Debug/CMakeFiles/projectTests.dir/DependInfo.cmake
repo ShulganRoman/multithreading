@@ -8,8 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/romansulgan/repos/multithreading/tests/DatabaseTest.cpp" "CMakeFiles/projectTests.dir/tests/DatabaseTest.cpp.o" "gcc" "CMakeFiles/projectTests.dir/tests/DatabaseTest.cpp.o.d"
-  "/Users/romansulgan/repos/multithreading/tests/ServerTestBoost.cpp" "CMakeFiles/projectTests.dir/tests/ServerTestBoost.cpp.o" "gcc" "CMakeFiles/projectTests.dir/tests/ServerTestBoost.cpp.o.d"
+  "/Users/romanshulgan/reps/multithreading/tests/ChatTest.cpp" "CMakeFiles/projectTests.dir/tests/ChatTest.cpp.o" "gcc" "CMakeFiles/projectTests.dir/tests/ChatTest.cpp.o.d"
+  "/Users/romanshulgan/reps/multithreading/tests/DatabaseTests.cpp" "CMakeFiles/projectTests.dir/tests/DatabaseTests.cpp.o" "gcc" "CMakeFiles/projectTests.dir/tests/DatabaseTests.cpp.o.d"
+  "/Users/romanshulgan/reps/multithreading/tests/NetworkTest.cpp" "CMakeFiles/projectTests.dir/tests/NetworkTest.cpp.o" "gcc" "CMakeFiles/projectTests.dir/tests/NetworkTest.cpp.o.d"
+  "/Users/romanshulgan/reps/multithreading/tests/UserTest.cpp" "CMakeFiles/projectTests.dir/tests/UserTest.cpp.o" "gcc" "CMakeFiles/projectTests.dir/tests/UserTest.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

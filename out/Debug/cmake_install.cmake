@@ -1,4 +1,4 @@
-# Install script for directory: /Users/romansulgan/repos/multithreading
+# Install script for directory: /Users/romanshulgan/reps/multithreading
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,24 +34,25 @@ endif()
 
 # Set path to fallback-tool for dependency-resolution.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/Library/Developer/CommandLineTools/usr/bin/objdump")
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/Users/romansulgan/repos/multithreading/out/Debug/src/exception/cmake_install.cmake")
-  include("/Users/romansulgan/repos/multithreading/out/Debug/src/user/cmake_install.cmake")
-  include("/Users/romansulgan/repos/multithreading/out/Debug/src/chat/cmake_install.cmake")
-  include("/Users/romansulgan/repos/multithreading/out/Debug/src/db/cmake_install.cmake")
-  include("/Users/romansulgan/repos/multithreading/out/Debug/src/server/cmake_install.cmake")
-  include("/Users/romansulgan/repos/multithreading/out/Debug/external/cmake_install.cmake")
+  include("/Users/romanshulgan/reps/multithreading/out/Debug/src/exception/cmake_install.cmake")
+  include("/Users/romanshulgan/reps/multithreading/out/Debug/src/net/cmake_install.cmake")
+  include("/Users/romanshulgan/reps/multithreading/out/Debug/src/user/cmake_install.cmake")
+  include("/Users/romanshulgan/reps/multithreading/out/Debug/src/chat/cmake_install.cmake")
+  include("/Users/romanshulgan/reps/multithreading/out/Debug/src/db/cmake_install.cmake")
+  include("/Users/romanshulgan/reps/multithreading/out/Debug/src/server/cmake_install.cmake")
+  include("/Users/romanshulgan/reps/multithreading/out/Debug/external/cmake_install.cmake")
 
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/Users/romansulgan/repos/multithreading/out/Debug/install_local_manifest.txt"
+  file(WRITE "/Users/romanshulgan/reps/multithreading/out/Debug/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
 if(CMAKE_INSTALL_COMPONENT)
@@ -67,6 +68,6 @@ else()
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "/Users/romansulgan/repos/multithreading/out/Debug/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/Users/romanshulgan/reps/multithreading/out/Debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

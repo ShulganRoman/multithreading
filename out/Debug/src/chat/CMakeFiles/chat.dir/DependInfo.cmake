@@ -8,9 +8,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/romansulgan/repos/multithreading/src/chat/impls/Chat.cpp" "src/chat/CMakeFiles/chat.dir/impls/Chat.cpp.o" "gcc" "src/chat/CMakeFiles/chat.dir/impls/Chat.cpp.o.d"
-  "/Users/romansulgan/repos/multithreading/src/chat/impls/IChat.cpp" "src/chat/CMakeFiles/chat.dir/impls/IChat.cpp.o" "gcc" "src/chat/CMakeFiles/chat.dir/impls/IChat.cpp.o.d"
-  "/Users/romansulgan/repos/multithreading/src/chat/impls/TestChat.cpp" "src/chat/CMakeFiles/chat.dir/impls/TestChat.cpp.o" "gcc" "src/chat/CMakeFiles/chat.dir/impls/TestChat.cpp.o.d"
+  "/Users/romanshulgan/reps/multithreading/src/chat/impls/Chat.cpp" "src/chat/CMakeFiles/chat.dir/impls/Chat.cpp.o" "gcc" "src/chat/CMakeFiles/chat.dir/impls/Chat.cpp.o.d"
+  "/Users/romanshulgan/reps/multithreading/src/chat/impls/IChat.cpp" "src/chat/CMakeFiles/chat.dir/impls/IChat.cpp.o" "gcc" "src/chat/CMakeFiles/chat.dir/impls/IChat.cpp.o.d"
+  "/Users/romanshulgan/reps/multithreading/src/chat/impls/TestChat.cpp" "src/chat/CMakeFiles/chat.dir/impls/TestChat.cpp.o" "gcc" "src/chat/CMakeFiles/chat.dir/impls/TestChat.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

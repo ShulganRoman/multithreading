@@ -1,22 +1,19 @@
 #pragma once
 
 #include "IRequest.h"
-#include "IUser.h"
 #include <format>
-
-using namespace std;
+#include <string>
 
 class CreateUser : public IRequest {
 public:
-  CreateUser(std::shared_ptr<IUser> user) : _user(std::move(user)) {}
-  string buildRequest() override {
-    return std::format(R"(
-                  INSERT INTO "user" (id, name)
-                  VALUES ({}, '{}');
-                  )",
-                       _user->getId(), _user->getName());
+  CreateUser(size_t id, const std::string &name) : _id(id), _name(name) {}
+
+  std::string getRequest() const override {
+    return std::format("INSERT INTO users (id, name) VALUES ({}, '{}');", _id,
+                       _name);
   }
 
 private:
-  std::shared_ptr<IUser> _user;
+  size_t _id;
+  std::string _name;
 };

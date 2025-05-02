@@ -4,14 +4,14 @@
 
 
 # Configuration directories and files
-SourceDirectory: /Users/romansulgan/repos/multithreading
-BuildDirectory: /Users/romansulgan/repos/multithreading/out/Debug
+SourceDirectory: /Users/romanshulgan/reps/multithreading
+BuildDirectory: /Users/romanshulgan/reps/multithreading/out/Debug
 
 # Where to place the cost data store
 CostDataFile: 
 
 # Site is something like machine.domain, i.e. pragmatic.crd
-Site: MacBook-Air-Roman-3.local
+Site: Romans-MacBook-Air.local
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
 BuildName: Darwin-c++
@@ -27,7 +27,7 @@ SubmitInactivityTimeout:
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/opt/homebrew/bin/cmake" "/Users/romansulgan/repos/multithreading"
+ConfigureCommand: "/opt/homebrew/bin/cmake" "/Users/romanshulgan/reps/multithreading"
 MakeCommand: /opt/homebrew/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 
@@ -63,8 +63,8 @@ UpdateOptions:
 UpdateType: git
 
 # Compiler info
-Compiler: /Library/Developer/CommandLineTools/usr/bin/c++
-CompilerVersion: 16.0.0.16000026
+Compiler: /usr/bin/c++
+CompilerVersion: 17.0.0.17000013
 
 # Dynamic analysis (MemCheck)
 PurifyCommand: 

@@ -1,20 +1,19 @@
 #pragma once
 
-#include "IChat.h"
 #include "IRequest.h"
 #include <format>
+#include <string>
 
 class CreateChat : public IRequest {
 public:
-  CreateChat(std::shared_ptr<IChat> chat) : _chat(std::move(chat)) {}
-  string buildRequest() override {
-    return std::format(R"(
-                  INSERT INTO "chat" (id, name)
-                  VALUES ({}, '{}');
-                  )",
-                       _chat->getId(), _chat->getName());
+  CreateChat(size_t id, const std::string &title) : _id(id), _title(title) {}
+
+  std::string getRequest() const override {
+    return std::format("INSERT INTO chats (id, title) VALUES ({}, '{}');", _id,
+                       _title);
   }
 
 private:
-  std::shared_ptr<IChat> _chat;
+  size_t _id;
+  std::string _title;
 };

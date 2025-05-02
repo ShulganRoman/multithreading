@@ -3,8 +3,6 @@
 
 std::atomic<size_t> User::userId = {0};
 
-User::User() = default;
-
 User::User(const std::string &name) {
   _name = name;
   _id = ++userId;

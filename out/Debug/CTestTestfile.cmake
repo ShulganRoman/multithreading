@@ -1,11 +1,12 @@
 # CMake generated Testfile for 
-# Source directory: /Users/romansulgan/repos/multithreading
-# Build directory: /Users/romansulgan/repos/multithreading/out/Debug
+# Source directory: /Users/romanshulgan/reps/multithreading
+# Build directory: /Users/romanshulgan/reps/multithreading/out/Debug
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
-include("/Users/romansulgan/repos/multithreading/out/Debug/projectTests[1]_include.cmake")
+include("/Users/romanshulgan/reps/multithreading/out/Debug/projectTests[1]_include.cmake")
 subdirs("src/exception")
+subdirs("src/net")
 subdirs("src/user")
 subdirs("src/chat")
 subdirs("src/db")
