@@ -26,11 +26,11 @@ private:
   void do_accept() {
     acceptor_.async_accept(
         [this](boost::system::error_code ec, tcp::socket sock) {
-          if (!ec) {
+          if (!ec)
             std::make_shared<Session>(std::move(sock))->start();
-          } else {
+          else
             std::cerr << "Accept error: " << ec.message() << std::endl;
-          }
+
           do_accept();
         });
   }

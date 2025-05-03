@@ -1,5 +1,6 @@
 #pragma once
 
+#include "MessageBuffer.h"
 #include <boost/asio.hpp>
 #include <boost/thread.hpp>
 #include <iostream>
@@ -25,8 +26,8 @@ public:
 private:
   void do_communicate() {
     boost::asio::streambuf buf;
-    while (true) {
 
+    while (true) {
       boost::system::error_code ec;
       std::size_t n = boost::asio::read_until(socket_, buf, "\n", ec);
       if (ec) {
@@ -39,10 +40,14 @@ private:
       std::string line;
       std::getline(is, line);
 
-      std::cout << "Received: " << line << std::endl;
+      MessageBuffer messageBuffer(line);
 
-      std::string response = "Echo: " + line + "\n";
+      std::cout << "Received: " << std::endl;
+      std::cout << "  Username: " << messageBuffer.getUsername() << std::endl;
+      std::cout << "  Id: " << messageBuffer.getId() << std::endl;
+      std::cout << "  Datetime: " << messageBuffer.getDatetime() << std::endl;
 
+      std::string response = messageBuffer.getMessage();
       boost::asio::write(socket_, boost::asio::buffer(response), ec);
       if (ec) {
         std::cerr << "Write error: " << ec.message() << std::endl;

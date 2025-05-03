@@ -1,0 +1,2 @@
+/usr/bin/ar qc libserver.a CMakeFiles/server.dir/funcs_impl/IServer.cpp.o CMakeFiles/server.dir/funcs_impl/Server.cpp.o CMakeFiles/server.dir/funcs_impl/TestServer.cpp.o
+/usr/bin/ranlib libserver.a

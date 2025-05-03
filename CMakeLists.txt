@@ -4,6 +4,7 @@ project(project)
 set(CMAKE_CXX_STANDARD 20)
 
 find_package(Boost REQUIRED COMPONENTS system thread)
+find_package(nlohmann_json REQUIRED)
 include_directories(${Boost_INCLUDE_DIRS})
 
 find_package(PkgConfig REQUIRED)

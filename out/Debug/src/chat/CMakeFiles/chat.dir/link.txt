@@ -1,0 +1,2 @@
+/usr/bin/ar qc libchat.a CMakeFiles/chat.dir/impls/Chat.cpp.o CMakeFiles/chat.dir/impls/IChat.cpp.o CMakeFiles/chat.dir/impls/TestChat.cpp.o
+/usr/bin/ranlib libchat.a

@@ -1,0 +1,186 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "src/server/libserver.a"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"target_link_libraries",
+			"include_directories",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"src/server/CMakeLists.txt",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 2,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 4,
+				"parent" : 0
+			},
+			{
+				"file" : 1
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 8,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 1,
+				"line" : 12,
+				"parent" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 5,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -std=gnu++20 -arch arm64"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 4,
+					"path" : "/opt/homebrew/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/opt/homebrew/Cellar/libpqxx/7.10.1/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/Users/romanshulgan/reps/multithreading/src/server"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/romanshulgan/reps/multithreading/src/exception"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/romanshulgan/reps/multithreading/src/user"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/romanshulgan/reps/multithreading/src/chat"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/romanshulgan/reps/multithreading/src/db"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/romanshulgan/reps/multithreading/src/db/requests"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/Users/romanshulgan/reps/multithreading/src/net"
+				}
+			],
+			"language" : "CXX",
+			"languageStandard" : 
+			{
+				"backtraces" : 
+				[
+					1
+				],
+				"standard" : "20"
+			},
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "user::@8d66db5bd6eb441e6dbf"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "chat::@769a1ad8c06ae3651a73"
+		},
+		{
+			"backtrace" : 2,
+			"id" : "db::@28398e0e8a2026e71f30"
+		}
+	],
+	"id" : "server::@2804e40980a64c7d7ad1",
+	"name" : "server",
+	"nameOnDisk" : "libserver.a",
+	"paths" : 
+	{
+		"build" : "src/server",
+		"source" : "src/server"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/server/funcs_impl/IServer.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/server/funcs_impl/Server.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/server/funcs_impl/TestServer.cpp",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}

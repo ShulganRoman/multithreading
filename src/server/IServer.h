@@ -1,6 +1,5 @@
 #pragma once
 
-#include "Database.h"
 #include "IChat.h"
 #include "IUser.h"
 #include <unordered_map>

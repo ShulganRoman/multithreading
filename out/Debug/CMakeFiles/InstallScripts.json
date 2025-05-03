@@ -1,0 +1,16 @@
+{
+	"InstallScripts" : 
+	[
+		"/Users/romanshulgan/reps/multithreading/out/Debug/cmake_install.cmake",
+		"/Users/romanshulgan/reps/multithreading/out/Debug/src/exception/cmake_install.cmake",
+		"/Users/romanshulgan/reps/multithreading/out/Debug/src/net/cmake_install.cmake",
+		"/Users/romanshulgan/reps/multithreading/out/Debug/src/user/cmake_install.cmake",
+		"/Users/romanshulgan/reps/multithreading/out/Debug/src/chat/cmake_install.cmake",
+		"/Users/romanshulgan/reps/multithreading/out/Debug/src/db/cmake_install.cmake",
+		"/Users/romanshulgan/reps/multithreading/out/Debug/src/server/cmake_install.cmake",
+		"/Users/romanshulgan/reps/multithreading/out/Debug/external/cmake_install.cmake",
+		"/Users/romanshulgan/reps/multithreading/out/Debug/external/googlemock/cmake_install.cmake",
+		"/Users/romanshulgan/reps/multithreading/out/Debug/external/googletest/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

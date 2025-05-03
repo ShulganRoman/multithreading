@@ -1,0 +1,2 @@
+/usr/bin/ar qc libdb.a CMakeFiles/db.dir/Database.cpp.o CMakeFiles/db.dir/TestDatabase.cpp.o
+/usr/bin/ranlib libdb.a
