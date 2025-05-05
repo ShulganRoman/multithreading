@@ -5,12 +5,12 @@
 
 class DeleteUser : public IRequest {
 public:
-  explicit DeleteUser(size_t id) : _id(id) {}
+  explicit DeleteUser(std::string username) : username_(username) {}
 
   std::string getRequest() const override {
-    return std::format("DELETE FROM users WHERE id = {};", _id);
+    return std::format("DELETE FROM users WHERE name = '{}';", username_);
   }
 
 private:
-  size_t _id;
+  std::string username_;
 };

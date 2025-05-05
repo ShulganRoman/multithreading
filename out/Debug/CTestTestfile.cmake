@@ -5,6 +5,7 @@
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.
 include("/Users/romanshulgan/reps/multithreading/out/Debug/projectTests[1]_include.cmake")
+subdirs("src/json")
 subdirs("src/exception")
 subdirs("src/net")
 subdirs("src/user")

@@ -6,14 +6,16 @@
 
 class CreateUser : public IRequest {
 public:
-  CreateUser(size_t id, const std::string &name) : _id(id), _name(name) {}
+  CreateUser(const std::string &username, const std::string password)
+      : _username(username), _password(password) {}
 
   std::string getRequest() const override {
-    return std::format("INSERT INTO users (id, name) VALUES ({}, '{}');", _id,
-                       _name);
+    return std::format("INSERT INTO users (name, password) VALUES ('{}', '{}') "
+                       "ON CONFLICT (name) DO NOTHING RETURNING id;",
+                       _username, _password);
   }
 
 private:
-  size_t _id;
-  std::string _name;
+  std::string _username;
+  std::string _password;
 };

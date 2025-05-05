@@ -1,0 +1,10 @@
+{
+  "metadata": {
+    "entity": "user"
+  },
+  "mode": 0,
+  "modify": {
+    "username": "Danil",
+    "password": ""
+  }
+}

@@ -12,8 +12,23 @@ class SessionTest : public ::testing::Test {
 protected:
   boost::asio::io_context io;
   tcp::acceptor acceptor{io, tcp::endpoint(tcp::v4(), 0)};
+  boost::thread io_thread;
+
+  void SetUp() override {
+
+    io_thread = boost::thread([&] { io.run(); });
+  }
+
+  void TearDown() override {
+    io.stop();
+    io_thread.join();
+  }
 
   unsigned short port() const { return acceptor.local_endpoint().port(); }
+
+  void handle_echo(std::shared_ptr<Session> sess, const std::string &msg) {
+    sess->send("Echo: " + msg + "\n");
+  }
 };
 
 TEST_F(SessionTest, EchoSingleMessage) {
@@ -23,7 +38,9 @@ TEST_F(SessionTest, EchoSingleMessage) {
   tcp::socket server_socket(io);
   acceptor.accept(server_socket);
 
-  auto session = std::make_shared<Session>(std::move(server_socket));
+  auto session = std::make_shared<Session>(
+      std::move(server_socket),
+      [this](auto sess, auto msg) { handle_echo(sess, msg); });
   session->start();
 
   const std::string request = "Hello GoogleTest\n";
@@ -44,7 +61,9 @@ TEST_F(SessionTest, EchoMultipleMessages) {
   tcp::socket server_socket(io);
   acceptor.accept(server_socket);
 
-  auto session = std::make_shared<Session>(std::move(server_socket));
+  auto session = std::make_shared<Session>(
+      std::move(server_socket),
+      [this](auto sess, auto msg) { handle_echo(sess, msg); });
   session->start();
 
   for (int i = 0; i < 5; ++i) {
@@ -67,7 +86,9 @@ TEST_F(SessionTest, ClientCloseEndsSession) {
   tcp::socket server_socket(io);
   acceptor.accept(server_socket);
 
-  auto session = std::make_shared<Session>(std::move(server_socket));
+  auto session = std::make_shared<Session>(
+      std::move(server_socket),
+      [this](auto sess, auto msg) { handle_echo(sess, msg); });
   session->start();
 
   client.close();

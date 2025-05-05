@@ -39,6 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
+  include("/Users/romanshulgan/reps/multithreading/out/Debug/src/json/cmake_install.cmake")
   include("/Users/romanshulgan/reps/multithreading/out/Debug/src/exception/cmake_install.cmake")
   include("/Users/romanshulgan/reps/multithreading/out/Debug/src/net/cmake_install.cmake")
   include("/Users/romanshulgan/reps/multithreading/out/Debug/src/user/cmake_install.cmake")

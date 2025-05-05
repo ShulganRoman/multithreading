@@ -35,6 +35,13 @@
 /Users/romanshulgan/reps/multithreading/out/Debug/CMakeFiles/install.dir
 /Users/romanshulgan/reps/multithreading/out/Debug/CMakeFiles/install/local.dir
 /Users/romanshulgan/reps/multithreading/out/Debug/CMakeFiles/install/strip.dir
+/Users/romanshulgan/reps/multithreading/out/Debug/src/json/CMakeFiles/test.dir
+/Users/romanshulgan/reps/multithreading/out/Debug/src/json/CMakeFiles/edit_cache.dir
+/Users/romanshulgan/reps/multithreading/out/Debug/src/json/CMakeFiles/rebuild_cache.dir
+/Users/romanshulgan/reps/multithreading/out/Debug/src/json/CMakeFiles/list_install_components.dir
+/Users/romanshulgan/reps/multithreading/out/Debug/src/json/CMakeFiles/install.dir
+/Users/romanshulgan/reps/multithreading/out/Debug/src/json/CMakeFiles/install/local.dir
+/Users/romanshulgan/reps/multithreading/out/Debug/src/json/CMakeFiles/install/strip.dir
 /Users/romanshulgan/reps/multithreading/out/Debug/src/exception/CMakeFiles/test.dir
 /Users/romanshulgan/reps/multithreading/out/Debug/src/exception/CMakeFiles/edit_cache.dir
 /Users/romanshulgan/reps/multithreading/out/Debug/src/exception/CMakeFiles/rebuild_cache.dir

@@ -10,7 +10,8 @@ class TestDatabase final : public IDatabase {
 public:
   explicit TestDatabase(boost::asio::io_context &io);
 
-  void execute(std::unique_ptr<IRequest> request) override;
+  void execute(std::unique_ptr<IRequest> request,
+               DbHandler handler = {}) override;
 
   bool userExists(size_t id) const;
   bool chatExists(size_t id) const;

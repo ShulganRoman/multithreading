@@ -65,6 +65,7 @@ CMAKE_BINARY_DIR = /Users/romanshulgan/reps/multithreading/out/Debug
 # The main recursive "all" target.
 all: CMakeFiles/project.dir/all
 all: CMakeFiles/projectTests.dir/all
+all: src/json/all
 all: src/exception/all
 all: src/net/all
 all: src/user/all
@@ -77,6 +78,7 @@ all: external/all
 # The main recursive "codegen" target.
 codegen: CMakeFiles/project.dir/codegen
 codegen: CMakeFiles/projectTests.dir/codegen
+codegen: src/json/codegen
 codegen: src/exception/codegen
 codegen: src/net/codegen
 codegen: src/user/codegen
@@ -87,6 +89,7 @@ codegen: external/codegen
 .PHONY : codegen
 
 # The main recursive "preinstall" target.
+preinstall: src/json/preinstall
 preinstall: src/exception/preinstall
 preinstall: src/net/preinstall
 preinstall: src/user/preinstall
@@ -127,6 +130,7 @@ clean: CMakeFiles/ContinuousCoverage.dir/clean
 clean: CMakeFiles/ContinuousMemCheck.dir/clean
 clean: CMakeFiles/ContinuousSubmit.dir/clean
 clean: CMakeFiles/projectTests.dir/clean
+clean: src/json/clean
 clean: src/exception/clean
 clean: src/net/clean
 clean: src/user/clean
@@ -258,6 +262,25 @@ src/exception/preinstall:
 # Recursive "clean" directory target.
 src/exception/clean:
 .PHONY : src/exception/clean
+
+#=============================================================================
+# Directory level rules for directory src/json
+
+# Recursive "all" directory target.
+src/json/all:
+.PHONY : src/json/all
+
+# Recursive "codegen" directory target.
+src/json/codegen:
+.PHONY : src/json/codegen
+
+# Recursive "preinstall" directory target.
+src/json/preinstall:
+.PHONY : src/json/preinstall
+
+# Recursive "clean" directory target.
+src/json/clean:
+.PHONY : src/json/clean
 
 #=============================================================================
 # Directory level rules for directory src/net

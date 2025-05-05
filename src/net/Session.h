@@ -1,60 +1,72 @@
-#pragma once
 
-#include "MessageBuffer.h"
+#pragma once
 #include <boost/asio.hpp>
-#include <boost/thread.hpp>
+#include <functional>
 #include <iostream>
 #include <memory>
+#include <string>
 
 using boost::asio::ip::tcp;
 
 class Session : public std::enable_shared_from_this<Session> {
 public:
-  Session(tcp::socket socket) : socket_(std::move(socket)) {}
+  using Handler =
+      std::function<void(std::shared_ptr<Session>, const std::string &)>;
 
-  void start() {
+  Session(tcp::socket sock, Handler on_msg)
+      : socket_(std::move(sock)), on_msg_(std::move(on_msg)) {}
+
+  void start() { read(); }
+  void send(std::string msg) {
     auto self = shared_from_this();
-    boost::thread([self]() {
-      try {
-        self->do_communicate();
-      } catch (std::exception &e) {
-        std::cerr << "Session error: " << e.what() << std::endl;
-      }
-    }).detach();
+    boost::asio::post(socket_.get_executor(),
+                      [self, msg = std::move(msg)]() mutable {
+                        bool writing = !self->outbox_.empty();
+                        self->outbox_.push_back(std::move(msg));
+                        if (!writing)
+                          self->do_write();
+                      });
   }
 
+  void setUsername(const std::string &name) { username_ = name; }
+  const std::string &username() const { return username_; }
+
 private:
-  void do_communicate() {
-    boost::asio::streambuf buf;
+  void do_write() {
+    auto self = shared_from_this();
+    boost::asio::async_write(socket_, boost::asio::buffer(outbox_.front()),
+                             [self](boost::system::error_code ec, std::size_t) {
+                               if (ec) {
+                                 std::cerr << "write: " << ec.message() << '\n';
+                                 return;
+                               }
+                               self->outbox_.pop_front();
+                               if (!self->outbox_.empty())
+                                 self->do_write();
+                             });
+  }
 
-    while (true) {
-      boost::system::error_code ec;
-      std::size_t n = boost::asio::read_until(socket_, buf, "\n", ec);
-      if (ec) {
-        if (ec != boost::asio::error::eof)
-          std::cerr << "Read error: " << ec.message() << std::endl;
-        break;
-      }
-
-      std::istream is(&buf);
-      std::string line;
-      std::getline(is, line);
-
-      MessageBuffer messageBuffer(line);
-
-      std::cout << "Received: " << std::endl;
-      std::cout << "  Username: " << messageBuffer.getUsername() << std::endl;
-      std::cout << "  Id: " << messageBuffer.getId() << std::endl;
-      std::cout << "  Datetime: " << messageBuffer.getDatetime() << std::endl;
-
-      std::string response = messageBuffer.getMessage();
-      boost::asio::write(socket_, boost::asio::buffer(response), ec);
-      if (ec) {
-        std::cerr << "Write error: " << ec.message() << std::endl;
-        break;
-      }
-    }
+  void read() {
+    auto self = shared_from_this();
+    boost::asio::async_read_until(
+        socket_, buf_, "\n", [self](boost::system::error_code ec, std::size_t) {
+          if (ec) {
+            std::cerr << "read: " << ec.message() << '\n';
+            return;
+          }
+          std::istream is(&self->buf_);
+          std::string line;
+          std::getline(is, line);
+          if (!line.empty() && line.back() == '\r')
+            line.pop_back();
+          self->on_msg_(self, line);
+          self->read();
+        });
   }
 
   tcp::socket socket_;
+  boost::asio::streambuf buf_;
+  std::deque<std::string> outbox_;
+  std::string username_;
+  Handler on_msg_;
 };

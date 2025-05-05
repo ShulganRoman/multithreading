@@ -12,6 +12,7 @@ pkg_check_modules(PQXX REQUIRED libpqxx)
 include_directories(${PQXX_INCLUDE_DIRS})
 link_directories(${PQXX_LIBRARY_DIRS})
 
+add_subdirectory(src/json)
 add_subdirectory(src/exception)
 add_subdirectory(src/net)
 add_subdirectory(src/user)

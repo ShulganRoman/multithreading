@@ -2,6 +2,7 @@
 	"InstallScripts" : 
 	[
 		"/Users/romanshulgan/reps/multithreading/out/Debug/cmake_install.cmake",
+		"/Users/romanshulgan/reps/multithreading/out/Debug/src/json/cmake_install.cmake",
 		"/Users/romanshulgan/reps/multithreading/out/Debug/src/exception/cmake_install.cmake",
 		"/Users/romanshulgan/reps/multithreading/out/Debug/src/net/cmake_install.cmake",
 		"/Users/romanshulgan/reps/multithreading/out/Debug/src/user/cmake_install.cmake",

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/opt/homebrew/include -I/opt/homebrew/Cellar/libpqxx/7.10.1/include -I/Users/romanshulgan/reps/multithreading/src/server -I/Users/romanshulgan/reps/multithreading/src/exception -I/Users/romanshulgan/reps/multithreading/src/user -I/Users/romanshulgan/reps/multithreading/src/chat -I/Users/romanshulgan/reps/multithreading/src/db -I/Users/romanshulgan/reps/multithreading/src/db/requests -I/Users/romanshulgan/reps/multithreading/src/net
+CXX_INCLUDES = -I/opt/homebrew/include -I/opt/homebrew/Cellar/libpqxx/7.10.1/include -I/Users/romanshulgan/reps/multithreading/src/server -I/Users/romanshulgan/reps/multithreading/src/exception -I/Users/romanshulgan/reps/multithreading/src/user -I/Users/romanshulgan/reps/multithreading/src/chat -I/Users/romanshulgan/reps/multithreading/src/db -I/Users/romanshulgan/reps/multithreading/src/db/requests -I/Users/romanshulgan/reps/multithreading/src/net -I/Users/romanshulgan/reps/multithreading/src/json
 
 CXX_FLAGSarm64 = -g -std=gnu++20 -arch arm64
 

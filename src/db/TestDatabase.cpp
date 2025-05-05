@@ -5,7 +5,7 @@
 TestDatabase::TestDatabase(boost::asio::io_context &io)
     : _strand(boost::asio::make_strand(io)) {}
 
-void TestDatabase::execute(std::unique_ptr<IRequest> req) {
+void TestDatabase::execute(std::unique_ptr<IRequest> req, DbHandler h) {
   boost::asio::post(_strand, [this, sql = req->getRequest()] {
     _history.push_back(sql);
     applySql(sql);

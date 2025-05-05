@@ -9,9 +9,6 @@
 #include "AddMessage.h"
 #include "CreateChat.h"
 #include "CreateUser.h"
-#include "DeleteChat.h"
-#include "DeleteUser.h"
-#include "InsertUserIntoChat.h"
 
 class TestDBFixture : public ::testing::Test {
 protected:
@@ -40,29 +37,15 @@ protected:
 };
 
 TEST_F(TestDBFixture, CreateUserSQL) {
-  db.execute(std::make_unique<CreateUser>(1, "Alice"));
-  EXPECT_EQ(lastSql(), "INSERT INTO users (id, name) VALUES (1, 'Alice');");
-}
-
-TEST_F(TestDBFixture, DeleteUserSQL) {
-  db.execute(std::make_unique<DeleteUser>(42));
-  EXPECT_EQ(lastSql(), "DELETE FROM users WHERE id = 42;");
+  db.execute(std::make_unique<CreateUser>("Alice", "p"));
+  EXPECT_EQ(lastSql(),
+            "INSERT INTO users (name, password) VALUES ('Alice', 'p') "
+            "ON CONFLICT (name) DO NOTHING RETURNING id;");
 }
 
 TEST_F(TestDBFixture, CreateChatSQL) {
-  db.execute(std::make_unique<CreateChat>(5, "General"));
-  EXPECT_EQ(lastSql(), "INSERT INTO chats (id, title) VALUES (5, 'General');");
-}
-
-TEST_F(TestDBFixture, DeleteChatSQL) {
-  db.execute(std::make_unique<DeleteChat>(99));
-  EXPECT_EQ(lastSql(), "DELETE FROM chats WHERE id = 99;");
-}
-
-TEST_F(TestDBFixture, InsertUserIntoChatSQL) {
-  db.execute(std::make_unique<InsertUserIntoChat>(3, 7));
-  EXPECT_EQ(lastSql(),
-            "INSERT INTO chat_users (chat_id, user_id) VALUES (7, 3);");
+  db.execute(std::make_unique<CreateChat>("General"));
+  EXPECT_EQ(lastSql(), "INSERT INTO chats (title) VALUES ('General');");
 }
 
 TEST_F(TestDBFixture, AddMessageSQL) {
@@ -85,8 +68,7 @@ TEST(ThreadSafety, ConcurrentExecute) {
   for (size_t t = 0; t < threads; ++t) {
     pool.emplace_back([&db, t] {
       for (size_t i = 0; i < perThread; ++i) {
-        db.execute(
-            std::make_unique<CreateUser>(t * 100 + i, "T" + std::to_string(t)));
+        db.execute(std::make_unique<CreateUser>("T" + std::to_string(t), ""));
       }
     });
   }
@@ -112,7 +94,7 @@ TEST(Async, ExecuteThroughThreadPool) {
 
   boost::asio::thread_pool tp(4);
   for (size_t i = 0; i < 100; ++i)
-    db.execute(std::make_unique<CreateChat>(i, "Chat" + std::to_string(i)));
+    db.execute(std::make_unique<CreateChat>("Chat" + std::to_string(i)));
 
   tp.join();
 
@@ -122,9 +104,9 @@ TEST(Async, ExecuteThroughThreadPool) {
 
   EXPECT_EQ(db.history().size(), 100);
   EXPECT_EQ(db.history().front(),
-            "INSERT INTO chats (id, title) VALUES (0, 'Chat0');");
+            "INSERT INTO chats (title) VALUES ('Chat0');");
   EXPECT_EQ(db.history().back(),
-            "INSERT INTO chats (id, title) VALUES (99, 'Chat99');");
+            "INSERT INTO chats (title) VALUES ('Chat99');");
 
   work.reset();
   ioThread.join();
