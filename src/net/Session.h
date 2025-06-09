@@ -5,6 +5,7 @@
 #include <iostream>
 #include <memory>
 #include <string>
+#include <deque>
 
 using boost::asio::ip::tcp;
 
