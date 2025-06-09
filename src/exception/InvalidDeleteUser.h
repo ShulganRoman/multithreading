@@ -16,7 +16,7 @@ public:
     _message = "Exception: user with id " + std::to_string(_id) + " not found.";
   }
 
-  const char *what() const _NOEXCEPT override;
+  const char *what() const noexcept override;
 
 private:
   std::string _message;
@@ -25,6 +25,6 @@ private:
   size_t _id;
 };
 
-inline const char *UsernameException::what() const _NOEXCEPT {
+inline const char *UsernameException::what() const noexcept {
   return _message.c_str();
 }
